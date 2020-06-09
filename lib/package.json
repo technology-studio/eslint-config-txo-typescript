@@ -1,0 +1,28 @@
+{
+  "name": "eslint-config-txo-react",
+  "version": "4.0.0",
+  "description": "Technology Studio - Eslint config react",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/technology-studio/eslint-config-txo-react.git"
+  },
+  "author": {
+    "name": "Technology Studio",
+    "email": "npm@technologystudio.sk",
+    "url": "https://github.com/technology-studio/"
+  },
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "eslint-config-standard": "^14.1.0"
+  },
+  "peerDependencies": {
+    "eslint-plugin-flowtype": "^4.6.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}

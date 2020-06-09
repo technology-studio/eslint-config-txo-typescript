@@ -1,0 +1,7 @@
+{
+  "extends": "./lib/index.js",
+  "rules": {
+    "comma-dangle": "off",
+    "prefer-destructuring": "off"
+  }
+}

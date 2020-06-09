@@ -1,0 +1,42 @@
+{
+  "name": "eslint-config-txo-react",
+  "description": "Technology Studio - Eslint config react",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/technology-studio/eslint-config-txo-react.git"
+  },
+  "author": {
+    "name": "Technology Studio",
+    "email": "npm@technologystudio.sk",
+    "url": "https://github.com/technology-studio/"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --format=node_modules/eslint-formatter-pretty .",
+    "fixcode": "eslint --format=node_modules/eslint-formatter-pretty . --fix",
+    "git-hook": "yarn -s lint"
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "yarn run git-hook",
+      "prepush": "yarn run git-hook"
+    }
+  },
+  "dependencies": {
+    "eslint-config-standard": "^14.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-formatter-pretty": "^3.0.1",
+    "eslint-plugin-flowtype": "^4.6.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.0.10"
+  }
+}

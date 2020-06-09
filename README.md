@@ -1,1 +1,3 @@
-# eslint-config-txo-typescript
+# Eslint config for react #
+
+Eslint config for react
