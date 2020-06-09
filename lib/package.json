@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-txo-react",
+  "name": "eslint-config-txo-typescript",
   "version": "4.0.0",
   "description": "Technology Studio - Eslint config react",
   "main": "index.js",
@@ -18,7 +18,6 @@
     "eslint-config-standard": "^14.1.0"
   },
   "peerDependencies": {
-    "eslint-plugin-flowtype": "^4.6.0",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
