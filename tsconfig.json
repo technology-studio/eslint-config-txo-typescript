@@ -8,5 +8,9 @@
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
     "sourceMap": true
-  }
+  },
+  "include": [
+    "test/**/*",
+    "lib/**/*"
+  ]
 }
