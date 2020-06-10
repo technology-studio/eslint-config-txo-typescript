@@ -1,11 +1,11 @@
 {
   "name": "eslint-config-txo-typescript",
   "version": "4.0.0",
-  "description": "Technology Studio - Eslint config react",
+  "description": "Technology Studio - Eslint config typescript",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/technology-studio/eslint-config-txo-react.git"
+    "url": "https://github.com/technology-studio/eslint-config-txo-typescript.git"
   },
   "author": {
     "name": "Technology Studio",
