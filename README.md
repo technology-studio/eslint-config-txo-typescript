@@ -1,3 +1,3 @@
-# Eslint config for react #
+# Eslint typescript config#
 
-Eslint config for react
+Eslint typescript config

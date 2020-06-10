@@ -10,43 +10,50 @@
 
 // HELPER STRUCTURES
 
-type Sample = {}
+type Sample = Record<string, unknown>
 type Generic<TYPE> = TYPE
 
 // VALIDATION SAMPLES
+// export type SemiError = Record<string, unknown>;
+export type SemiOk = Record<string, unknown>
 
-// export type SemiError = {};
-export type SemiOk = {}
-
-// export const arrayStyleComplexTypeError: Array<?{}>[] = []
-export const arrayStyleComplexTypeOk: (?{})[] = []
+// export const arrayStyleComplexTypeError: Array<Record<string, unknown>>[] = []
+export const arrayStyleComplexTypeOk: Record<string, unknown>[] = []
 
 // export const arrayStyleSimlpeTypeError: Array<Sample>[] = []
 export const arrayStyleSimpleTypeOk: Sample[] = []
 
-// export const booleanStyleError: bool = true
-export const booleanStyleOk: boolean = true
+// export const noInferrableTypesError: boolean = true
+export const noInferrableTypesOk = true
 
 // export type DelimiterDangleAError = { foo: boolean, }
 // export type DelimiterDangleBError = {
-//   foo: boolean,
+//   foo: boolean
 // }
-export type DelimiterDangleAError = { foo: boolean }
+export type DelimiterDangleAOk = { foo: boolean }
 export type DelimiterDangleBOk = {
   foo: boolean,
   bar: boolean,
 }
-
 // export type GenericDangleError = Generic< number >
 export type GenericDangleOk = Generic<number>
 
 // export type NoDupeKeysError = { a: number, a: number }
 export type NoDupeKeysOK = { a: number, b: number }
 
-// export type typeIdMatchError = {}
-export type TypeIdMatchOk = {}
+// export type typeNamingConventionError = Record<string, unknown>
+export type TypeNamingConventionOk = Record<string, unknown>
 
 export type NoUselessComputedKeyOk = { 123: number }
 export type NoUselessComputedKeyOk2 = { [123]: number }
 export const noUselessComputedKeyOk = { 123: 1 }
 export const noUselessComputedKeyOk2 = { [123]: 1 }
+
+// export const multilineCommaError = {
+//   a: '1',
+//   b: '2'
+// }
+export const multilineCommaOk = {
+  a: '1',
+  b: '2',
+}
