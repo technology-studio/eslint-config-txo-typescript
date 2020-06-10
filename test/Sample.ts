@@ -14,7 +14,7 @@ type Sample = Record<string, unknown>
 type Generic<TYPE> = TYPE
 
 // VALIDATION SAMPLES
-export type SemiError = Record<string, unknown>;
+// export type SemiError = Record<string, unknown>;
 export type SemiOk = Record<string, unknown>
 
 // export const arrayStyleComplexTypeError: Array<Record<string, unknown>>[] = []
