@@ -8,6 +8,8 @@
 
 'use strict'; // eslint-disable-line
 
+// NOTE: Use name of rule for variables or types
+
 // HELPER STRUCTURES
 
 type Sample = Record<string, unknown>
@@ -46,8 +48,11 @@ export type TypeNamingConventionOk = Record<string, unknown>
 
 export type NoUselessComputedKeyOk = { 123: number }
 export type NoUselessComputedKeyOk2 = { [123]: number }
+// export const noUselessComputedKeyError = { [123]: 1 }
 export const noUselessComputedKeyOk = { 123: 1 }
-export const noUselessComputedKeyOk2 = { [123]: 1 }
+
+// export interface ConsistentTypeDefinitionsError { a: boolean }
+export type ConsistentTypeDefinitionsOk = { a: boolean }
 
 // export const multilineCommaError = {
 //   a: '1',
@@ -58,4 +63,5 @@ export const multilineCommaOk = {
   b: '2',
 }
 
+// TODO: fix wrong name, it's not clear what rule is tested.
 export const allowNullableObjectOk = ((Math.random() > 0.5) ? 'a' : false) ? 'ok' : 'Error'
