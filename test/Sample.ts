@@ -57,3 +57,5 @@ export const multilineCommaOk = {
   a: '1',
   b: '2',
 }
+
+export const allowNullableObjectOk = ((Math.random() > 0.5) ? 'a' : false) ? 'ok' : 'Error'
