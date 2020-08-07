@@ -63,5 +63,29 @@ export const multilineCommaOk = {
   b: '2',
 }
 
+export const noReturnAwaitOk = async (): Promise<string> => {
+  return Promise.resolve('try')
+}
+
+// export const noReturnAwaitError = async (): Promise<void> => {
+//   return await new Promise(resolve => setTimeout(resolve, 100))
+// }
+
+export const returnAwaitInTryCatchOk = async (): Promise<string> => {
+  try {
+    return await Promise.resolve('try')
+  } catch (e) {
+    return 'error'
+  }
+}
+
+// export const returnAwaitInTryCatchError = async (): Promise<string> => {
+//   try {
+//     return Promise.resolve('try')
+//   } catch (e) {
+//     return 'error'
+//   }
+// }
+
 // TODO: fix wrong name, it's not clear what rule is tested.
 export const allowNullableObjectOk = ((Math.random() > 0.5) ? 'a' : false) ? 'ok' : 'Error'
