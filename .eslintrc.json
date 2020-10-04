@@ -1,6 +1,9 @@
 {
-  "extends": "./lib/index.js",
+  "extends": "eslint-config-txo-typescript",
   "rules": {
     "prefer-destructuring": "off"
+  },
+  "parserOptions": {
+    "createDefaultProgram": true
   }
 }

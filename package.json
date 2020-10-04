@@ -1,8 +1,5 @@
 {
-  "name": "eslint-config-txo-typescript",
-  "version": "1.0.0",
   "description": "Technology Studio - Eslint typescript config",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/technology-studio/eslint-config-txo-typescript.git"
@@ -14,10 +11,14 @@
   },
   "license": "MIT",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "lint": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx .",
     "fixcode": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx . --fix",
-    "git-hook": "yarn -s lint"
+    "git-hook": "yarn -s lint",
+    "p": "yarn workspace eslint-config-txo-typescript"
   },
   "husky": {
     "hooks": {
@@ -25,13 +26,9 @@
       "prepush": "yarn run git-hook"
     }
   },
-  "dependencies": {
-    "eslint-config-standard": "^14.1.1"
-  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.3.0",
     "@typescript-eslint/parser": "^4.3.0",
-    "babel-eslint": "^10.1.0",
     "eslint": "^7.10.0",
     "eslint-config-standard-with-typescript": "^19.0.1",
     "eslint-formatter-pretty": "^4.0.0",
