@@ -4,8 +4,6 @@
  * @Copyright: Technology Studio
 **/
 
-'use strict'; // eslint-disable-line
-
 module.exports = {
   rules: {
   },

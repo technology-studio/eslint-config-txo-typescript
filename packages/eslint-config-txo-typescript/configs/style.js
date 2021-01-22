@@ -4,12 +4,11 @@
  * @Copyright: Technology Studio
 **/
 
-'use strict'; // eslint-disable-line
-
 module.exports = {
   rules: {
     // require trailing commas in multiline object literals
     'comma-dangle': ['error', 'always-multiline'],
     'no-dupe-keys': 'error',
+    'no-void': ['error', { allowAsStatement: true }],
   },
 }

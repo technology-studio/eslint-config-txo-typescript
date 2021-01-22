@@ -1,12 +1,8 @@
 /**
- * @Author: Rostislav Simonik <rostislav.simonik>
+ * @Author: Rostislav Simonik <rostislav.simonik@technologystudio.sk>
  * @Date:   2018-06-02T12:11:28+02:00
- * @Email:  rostislav.simonik@technologystudio.sk
  * @Copyright: Technology Studio
- * @flow
- */
-
-'use strict'; // eslint-disable-line
+**/
 
 // NOTE: Use name of rule for variables or types
 

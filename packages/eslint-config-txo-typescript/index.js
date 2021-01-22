@@ -1,4 +1,8 @@
-'use strict'; // eslint-disable-line
+/**
+ * @Author: Rostislav Simonik <rostislav.simonik@technologystudio.sk>
+ * @Date: 2020-06-10T16:06:00+02:00
+ * @Copyright: Technology Studio
+**/
 
 module.exports = {
   extends: [
@@ -8,7 +12,9 @@ module.exports = {
       './configs/typescript',
       './configs/standard',
       './configs/style',
+      './configs/eslint',
     ].map(require.resolve),
+    'plugin:eslint-comments/recommended',
   ],
   parser: '@typescript-eslint/parser',
   plugins: [
