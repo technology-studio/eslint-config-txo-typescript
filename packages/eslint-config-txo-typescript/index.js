@@ -8,14 +8,14 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',
     'standard-with-typescript',
+    'plugin:jest/recommended',
+    'plugin:eslint-comments/recommended',
     ...[
       './configs/typescript',
       './configs/standard',
       './configs/style',
       './configs/eslint',
     ].map(require.resolve),
-    'plugin:jest/recommended',
-    'plugin:eslint-comments/recommended',
   ],
   parser: '@typescript-eslint/parser',
   plugins: [
