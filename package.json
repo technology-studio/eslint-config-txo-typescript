@@ -15,15 +15,13 @@
     "packages/*"
   ],
   "scripts": {
-    "compare-boilerplate-version": "./scripts/compare-boilerplate-version.sh",
     "lint": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx .",
     "fixcode": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx . --fix",
     "git-hook": "yarn -s lint",
     "ncu-all": "yarn workspaces run ncu -i && ncu -i",
     "postinstall": "husky install",
     "print-txo-packages": "yarn list 2> /dev/null|grep @txo|sed 's/.*\\(@txo[^@]*\\)@^*\\([^ ]*\\).*/\\1@\\2/g'|sort|uniq",
-    "sanity": "yarn lint && tsc --noEmit && yarn compare-boilerplate-version && yarn outdated && echo 'success'",
-    "update-boilerplate-version": "./scripts/update-boilerplate-version.sh",
+    "sanity": "yarn lint && tsc --noEmit && yarn outdated && echo 'success'",
     "p": "yarn workspace eslint-config-txo-typescript"
   },
   "dependencies": {
