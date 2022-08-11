@@ -14,6 +14,7 @@ module.exports = {
       './configs/style',
       './configs/eslint',
     ].map(require.resolve),
+    'plugin:jest/recommended',
     'plugin:eslint-comments/recommended',
   ],
   parser: '@typescript-eslint/parser',
