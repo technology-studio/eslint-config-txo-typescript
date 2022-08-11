@@ -20,7 +20,6 @@
     "git-hook": "yarn -s lint",
     "ncu-all": "yarn workspaces run ncu -i && ncu -i",
     "postinstall": "husky install",
-    "print-txo-packages": "yarn list 2> /dev/null|grep @txo|sed 's/.*\\(@txo[^@]*\\)@^*\\([^ ]*\\).*/\\1@\\2/g'|sort|uniq",
     "sanity": "yarn lint && tsc --noEmit && yarn outdated && echo 'success'",
     "p": "yarn workspace eslint-config-txo-typescript"
   },
