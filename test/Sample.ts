@@ -59,9 +59,7 @@ export const multilineCommaOk = {
   b: '2',
 }
 
-export const noReturnAwaitOk = async (): Promise<string> => {
-  return Promise.resolve('try')
-}
+export const noReturnAwaitOk = async (): Promise<string> => Promise.resolve('try')
 
 // export const noReturnAwaitError = async (): Promise<void> => {
 //   return await new Promise(resolve => setTimeout(resolve, 100))
@@ -85,3 +83,9 @@ export const returnAwaitInTryCatchOk = async (): Promise<string> => {
 
 // TODO: fix wrong name, it's not clear what rule is tested.
 export const allowNullableObjectOk = ((Math.random() > 0.5) ? 'a' : false) ? 'ok' : 'Error'
+
+export const returnValueImmediatelyOk = (): string => 'value'
+
+// export const returnValueImmediatelyError = (): string => {
+//   return 'value'
+// }
