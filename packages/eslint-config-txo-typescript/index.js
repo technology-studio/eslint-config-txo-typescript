@@ -10,6 +10,7 @@ module.exports = {
     'standard-with-typescript',
     'plugin:jest/recommended',
     'plugin:eslint-comments/recommended',
+    'plugin:import/recommended',
     ...[
       './configs/typescript',
       './configs/standard',
