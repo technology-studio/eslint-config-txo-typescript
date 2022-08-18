@@ -14,6 +14,7 @@ module.exports = {
     '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
     '@typescript-eslint/semi': ['error', 'never'],
     'no-dupe-keys': 'error',
+    '@typescript-eslint/keyword-spacing': ['error'],
     '@typescript-eslint/naming-convention': [
       'error',
       {

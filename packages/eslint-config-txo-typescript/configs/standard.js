@@ -10,6 +10,7 @@ module.exports = {
     'no-console': 'warn',
     'no-unused-vars': 'error',
     'prefer-template': 'error',
+    'keyword-spacing': 'off',
     camelcase: 'off',
     'object-curly-newline': [
       'error',
