@@ -24,9 +24,10 @@ jobs:
           node-version-file: '.nvmrc'
       - run: yarn install --frozen-lockfile
       - run: yarn test
-      - run: yarn semantic-release
+      - run: yarn semantic-release --debug
         env:
-          GITHUB_ACTION: yes
-          GITHUB_TOKEN: ${{ steps.get-token.outputs.token }}
+          GITHUB_TOKEN: 'aaaa'
+          GH_TOKEN: 'bbb'
+          # GH_TOKEN: ${{ steps.get-token.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           SLACK_WEBHOOK: ${{ secrets.SEMANTIC_RELEASE_SLACK_WEBHOOK }}
