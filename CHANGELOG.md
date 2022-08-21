@@ -1,3 +1,17 @@
+## [3.0.5](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.0.4...v3.0.5) (2022-08-21)
+
+
+### CI
+
+* disable debug mode ([ccdb27e](https://github.com/technology-studio/eslint-config-txo-typescript/commit/ccdb27ed30a2c29dad7e393073f68c620d3026fe))
+* fix by gh token ([bf89164](https://github.com/technology-studio/eslint-config-txo-typescript/commit/bf8916415b87a45e385395e11add7fa9195b6a3a))
+
+
+### Bug fixes
+
+* allow txo semantic release app to push on protected branch ([652f65f](https://github.com/technology-studio/eslint-config-txo-typescript/commit/652f65fa25ff7ed1fad75d53a6e27c61d022c57f))
+* remove github app fro semantic release ([809450f](https://github.com/technology-studio/eslint-config-txo-typescript/commit/809450f69c5b9834580895a11ace644172561394))
+
 ## [3.0.4](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.0.3...v3.0.4) (2022-08-21)
 
 
