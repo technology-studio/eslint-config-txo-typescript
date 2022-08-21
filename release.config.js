@@ -7,7 +7,6 @@
 module.exports = {
   branches: [
     'master',
-    'feature/ci-semantic-release',
   ],
   plugins: [
     ['@semantic-release/commit-analyzer', {

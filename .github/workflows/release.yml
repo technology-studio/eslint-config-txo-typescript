@@ -2,8 +2,7 @@ name: Release
 on:
   push:
     branches:
-      - feature/ci-semantic-release
-#      - master
+      - master
 
 jobs:
   release:
