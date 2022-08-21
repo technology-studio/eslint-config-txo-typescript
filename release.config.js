@@ -39,7 +39,6 @@ module.exports = {
     }],
     ['semantic-release-slack-bot',
       {
-        slackWebhook: 'https://my-webhook.com',
         notifyOnSuccess: true,
         notifyOnFail: true,
         slackWebhookEnVar: 'SEMANTIC_RELEASE_SLACK_WEBHOOK',
