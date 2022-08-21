@@ -1,3 +1,14 @@
+## [3.0.4](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.0.3...v3.0.4) (2022-08-21)
+
+
+### Bug fixes
+
+* add debug info ([#32](https://github.com/technology-studio/eslint-config-txo-typescript/issues/32)) ([c362794](https://github.com/technology-studio/eslint-config-txo-typescript/commit/c362794a7106c46b53d46662364d6e7c3337d2ad))
+* f4 ([5b66618](https://github.com/technology-studio/eslint-config-txo-typescript/commit/5b666189e3a877b565596e4864b6772c89eeaf99))
+* fetch-depth: 0 for actions/checkout ([#30](https://github.com/technology-studio/eslint-config-txo-typescript/issues/30)) ([1cd252e](https://github.com/technology-studio/eslint-config-txo-typescript/commit/1cd252e03062443d1ea175e3e1637b721103a6b7))
+* semantic-release by github app token workaround ([#31](https://github.com/technology-studio/eslint-config-txo-typescript/issues/31)) ([3b681c3](https://github.com/technology-studio/eslint-config-txo-typescript/commit/3b681c3387c4a951049ab3ea9738175ee2134d47))
+* test 2 ([dec60ec](https://github.com/technology-studio/eslint-config-txo-typescript/commit/dec60eca7f3378d6d4b116488bb13511de64534a))
+
 ## [3.0.3](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.0.2...v3.0.3) (2022-08-21)
 
 
