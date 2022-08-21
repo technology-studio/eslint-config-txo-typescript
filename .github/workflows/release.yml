@@ -24,7 +24,7 @@ jobs:
           node-version-file: '.nvmrc'
       - run: yarn install --frozen-lockfile
       - run: yarn test
-      - run: yarn semantic-release --debug
+      - run: yarn semantic-release
         env:
           GITHUB_TOKEN: ${{ steps.get-token.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
