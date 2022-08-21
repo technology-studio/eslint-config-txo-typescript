@@ -9,9 +9,14 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
+      - uses: navikt/github-app-token-generator@v1
+        id: get-token
+        with:
+          app-id: ${{ secrets.SEMANTIC_RELEASE_APP_ID }}
+          private-key: ${{ secrets.SEMANTIC_RELEASE_APP_PRIVATE_KEY }}
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          persist-credentials: false
       - uses: actions/setup-node@v3
         with:
           cache: 'yarn'
@@ -20,6 +25,6 @@ jobs:
       - run: yarn test
       - run: yarn semantic-release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.get-token.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           SLACK_WEBHOOK: ${{ secrets.SEMANTIC_RELEASE_SLACK_WEBHOOK }}
