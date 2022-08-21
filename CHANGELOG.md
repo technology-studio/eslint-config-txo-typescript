@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.0.2...v3.0.3) (2022-08-21)
+
+
+### Bug fixes
+
+* use semantic release github app for writing artifacts ([00cf9bc](https://github.com/technology-studio/eslint-config-txo-typescript/commit/00cf9bca87761e48d231b3fab624616c236bfd1d))
+
 ## [3.0.2](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.0.1...v3.0.2) (2022-08-21)
 
 
