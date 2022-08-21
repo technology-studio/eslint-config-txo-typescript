@@ -1,5 +1,5 @@
 {
-  "extends": "eslint-config-txo-typescript",
+  "extends": "./src/index.js",
   "rules": {
     "prefer-destructuring": "off"
   },
