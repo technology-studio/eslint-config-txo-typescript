@@ -41,7 +41,6 @@ module.exports = {
       {
         notifyOnSuccess: true,
         notifyOnFail: true,
-        slackWebhookEnVar: 'SEMANTIC_RELEASE_SLACK_WEBHOOK',
       },
     ],
     '@semantic-release/changelog',
