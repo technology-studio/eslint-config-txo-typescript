@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "lib": ["esnext", "dom"],
+    "lib": ["esnext"],
     "strict": true,
     "noImplicitAny": true,
     "noImplicitThis": true,

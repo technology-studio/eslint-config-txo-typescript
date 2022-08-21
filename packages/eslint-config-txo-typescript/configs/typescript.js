@@ -11,8 +11,10 @@ module.exports = {
       readonly: 'array',
     }],
     semi: 'off',
+    '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
     '@typescript-eslint/semi': ['error', 'never'],
     'no-dupe-keys': 'error',
+    '@typescript-eslint/keyword-spacing': ['error'],
     '@typescript-eslint/naming-convention': [
       'error',
       {
@@ -56,6 +58,7 @@ module.exports = {
     ],
     '@typescript-eslint/strict-boolean-expressions': ['off'],
     '@typescript-eslint/consistent-type-definitions': 'off',
+    '@typescript-eslint/consistent-type-imports': ['error'],
     '@typescript-eslint/ban-ts-comment': [
       'error', {
         'ts-expect-error': 'allow-with-description',

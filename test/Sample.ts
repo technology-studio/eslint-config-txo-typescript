@@ -9,63 +9,67 @@
 // HELPER STRUCTURES
 
 type Sample = Record<string, unknown>
-type Generic<TYPE> = TYPE
 
 // VALIDATION SAMPLES
-// export type SemiError = Record<string, unknown>;
+// eslint-disable-next-line @typescript-eslint/semi
+export type SemiError = Record<string, unknown>;
 export type SemiOk = Record<string, unknown>
 
-// export const arrayStyleComplexTypeError: Array<Record<string, unknown>>[] = []
+// eslint-disable-next-line @typescript-eslint/array-type
+export const arrayStyleComplexTypeError: Array<Record<string, unknown>>[] = []
 export const arrayStyleComplexTypeOk: Record<string, unknown>[] = []
 
-// export const arrayStyleSimlpeTypeError: Array<Sample>[] = []
+// eslint-disable-next-line @typescript-eslint/array-type
+export const arrayStyleSimlpeTypeError: Array<Sample>[] = []
 export const arrayStyleSimpleTypeOk: Sample[] = []
 
-// export const noInferrableTypesError: boolean = true
+// eslint-disable-next-line @typescript-eslint/no-inferrable-types
+export const noInferrableTypesError: boolean = true
 export const noInferrableTypesOk = true
 
-// export type DelimiterDangleAError = { foo: boolean, }
-// export type DelimiterDangleBError = {
-//   foo: boolean
-// }
+// eslint-disable-next-line @typescript-eslint/member-delimiter-style
+export type DelimiterDangleAError = { foo: boolean, }
+export type DelimiterDangleBError = {
+  // eslint-disable-next-line @typescript-eslint/member-delimiter-style
+  foo: boolean
+}
 export type DelimiterDangleAOk = { foo: boolean }
 export type DelimiterDangleBOk = {
   foo: boolean,
   bar: boolean,
 }
-// export type GenericDangleError = Generic< number >
-export type GenericDangleOk = Generic<number>
 
-// export type NoDupeKeysError = { a: number, a: number }
+// @ts-expect-error -- should fail
+export type NoDupeKeysError = { a: number, a: number }
 export type NoDupeKeysOK = { a: number, b: number }
 
-// export type typeNamingConventionError = Record<string, unknown>
+// eslint-disable-next-line @typescript-eslint/naming-convention
+export type typeNamingConventionError = Record<string, unknown>
 export type TypeNamingConventionOk = Record<string, unknown>
 
 export type NoUselessComputedKeyOk = { 123: number }
 export type NoUselessComputedKeyOk2 = { [123]: number }
-// export const noUselessComputedKeyError = { [123]: 1 }
+// eslint-disable-next-line no-useless-computed-key
+export const noUselessComputedKeyError = { [123]: 1 }
 export const noUselessComputedKeyOk = { 123: 1 }
 
-// export interface ConsistentTypeDefinitionsError { a: boolean }
+export interface ConsistentTypeDefinitionsError { a: boolean }
 export type ConsistentTypeDefinitionsOk = { a: boolean }
 
-// export const multilineCommaError = {
-//   a: '1',
-//   b: '2'
-// }
+export const multilineCommaError = {
+  a: '1',
+  // eslint-disable-next-line @typescript-eslint/comma-dangle
+  b: '2'
+}
 export const multilineCommaOk = {
   a: '1',
   b: '2',
 }
 
-export const noReturnAwaitOk = async (): Promise<string> => {
-  return Promise.resolve('try')
-}
+export const noReturnAwaitOk = async (): Promise<string> => Promise.resolve('try')
 
-// export const noReturnAwaitError = async (): Promise<void> => {
-//   return await new Promise(resolve => setTimeout(resolve, 100))
-// }
+// eslint-disable-next-line @typescript-eslint/return-await
+export const noReturnAwaitError = async (): Promise<void> => await new Promise(resolve => setTimeout(resolve, 100))
 
 export const returnAwaitInTryCatchOk = async (): Promise<string> => {
   try {
@@ -75,13 +79,21 @@ export const returnAwaitInTryCatchOk = async (): Promise<string> => {
   }
 }
 
-// export const returnAwaitInTryCatchError = async (): Promise<string> => {
-//   try {
-//     return Promise.resolve('try')
-//   } catch (e) {
-//     return 'error'
-//   }
-// }
+export const returnAwaitInTryCatchError = async (): Promise<string> => {
+  try {
+    // eslint-disable-next-line @typescript-eslint/return-await
+    return Promise.resolve('try')
+  } catch (e) {
+    return 'error'
+  }
+}
 
 // TODO: fix wrong name, it's not clear what rule is tested.
 export const allowNullableObjectOk = ((Math.random() > 0.5) ? 'a' : false) ? 'ok' : 'Error'
+
+export const returnValueImmediatelyOk = (): string => 'value'
+
+// eslint-disable-next-line arrow-body-style
+export const returnValueImmediatelyError = (): string => {
+  return 'value'
+}

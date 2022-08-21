@@ -8,22 +8,21 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',
     'standard-with-typescript',
+    'plugin:jest/recommended',
+    'plugin:eslint-comments/recommended',
+    'plugin:import/recommended',
     ...[
       './configs/typescript',
       './configs/standard',
       './configs/style',
       './configs/eslint',
     ].map(require.resolve),
-    'plugin:eslint-comments/recommended',
   ],
   parser: '@typescript-eslint/parser',
   plugins: [
     '@typescript-eslint',
   ],
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
     project: './tsconfig.json',
   },
   rules: {

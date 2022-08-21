@@ -6,9 +6,9 @@
 
 module.exports = {
   rules: {
-    // require trailing commas in multiline object literals
-    'comma-dangle': ['error', 'always-multiline'],
+    'comma-dangle': 'off', // NOTE: this is handled by @typescript-eslint/comma-dangle
     'no-dupe-keys': 'error',
     'no-void': ['error', { allowAsStatement: true }],
+    'import/order': ['error', { 'newlines-between': 'always' }],
   },
 }
