@@ -1,3 +1,11 @@
+## [3.0.2](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.0.1...v3.0.2) (2022-08-21)
+
+
+### Bug fixes
+
+* add propagation of SEMANTIC_RELEASE_SLACK_WEBHOOK ([7f39e47](https://github.com/technology-studio/eslint-config-txo-typescript/commit/7f39e47a256c2730d1b4216ec2af15dae6e9f9e0))
+* remove forgotten semantic-release slack webhooks override ([57ebf48](https://github.com/technology-studio/eslint-config-txo-typescript/commit/57ebf4835d1bfa7b3420416ad02049a7dda0b089))
+
 ## [3.0.1](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.0.0...v3.0.1) (2022-08-21)
 
 
