@@ -5,7 +5,10 @@
 **/
 
 module.exports = {
-  branches: ['master'],
+  branches: [
+    'master',
+    'feature/ci-semantic-release',
+  ],
   plugins: [
     ['@semantic-release/commit-analyzer', {
       present: 'conventionalcommits',
