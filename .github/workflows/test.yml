@@ -1,7 +1,6 @@
-name: 'Lint test'
+name: 'Test'
 
 on:
-  push:
   pull_request:
     types:
       - opened
@@ -19,4 +18,4 @@ jobs:
           cache: 'yarn'
           node-version-file: '.nvmrc'
       - run: yarn install --frozen-lockfile
-      - run: yarn lint
+      - run: yarn test
