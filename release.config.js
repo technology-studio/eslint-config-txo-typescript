@@ -19,7 +19,7 @@ module.exports = {
         { type: 'feat', release: 'minor' },
         { type: 'fix', release: 'patch' },
         { type: 'perf', release: 'patch' },
-        { type: 'refactor', section: 'patch' },
+        { type: 'refactor', release: 'patch' },
         { scope: 'no-release', release: false },
       ],
     }],
