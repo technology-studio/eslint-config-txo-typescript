@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.0.0...v3.0.1) (2022-08-21)
+
+
+### Bug fixes
+
+* semantic-release-slack-bot integration ([c297c63](https://github.com/technology-studio/eslint-config-txo-typescript/commit/c297c63d4d7cdf55a5406bb4c26bef70206ce227))
+
 ## [3.0.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v2.3.1...v3.0.0) (2022-08-21)
 
 
