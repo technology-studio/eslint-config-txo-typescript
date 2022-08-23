@@ -1,3 +1,11 @@
+## [3.1.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.0.6...v3.1.0) (2022-08-23)
+
+
+### Features
+
+* install and configure eslint import resolver for typescript ([00a2f55](https://github.com/technology-studio/eslint-config-txo-typescript/commit/00a2f554ae725f82c5c016d353ff26e59b21f569))
+* install and configure eslint import resolver for typescript ([#39](https://github.com/technology-studio/eslint-config-txo-typescript/issues/39)) ([2efd3b1](https://github.com/technology-studio/eslint-config-txo-typescript/commit/2efd3b1d627bd6ceff0141c9ebfef490aee44066))
+
 ## [3.0.6](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.0.5...v3.0.6) (2022-08-23)
 
 
