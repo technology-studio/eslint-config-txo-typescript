@@ -11,6 +11,7 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:eslint-comments/recommended',
     'plugin:import/recommended',
+    'plugin:import/typescript',
     ...[
       './configs/typescript',
       './configs/standard',
@@ -27,5 +28,10 @@ module.exports = {
   },
   rules: {
     strict: 'error',
+  },
+  settings: {
+    'import/resolver': {
+      typescript: true,
+    },
   },
 }
