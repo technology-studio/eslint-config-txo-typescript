@@ -5,6 +5,5 @@
     ":semanticCommits",
     ":automergeMinor"
   ],
-  "rangeStrategy": "bump",
-  "automergeType": "branch"
+  "rangeStrategy": "bump"
 }
