@@ -5,5 +5,13 @@
     ":semanticCommits",
     ":automergeMinor"
   ],
-  "rangeStrategy": "bump"
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "peerDependencies"
+      ],
+      "semanticCommitType": "fix"
+    }
+  ]
 }
