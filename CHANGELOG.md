@@ -1,3 +1,19 @@
+## [3.0.6](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.0.5...v3.0.6) (2022-08-23)
+
+
+### CI
+
+* change semantic type for peer dependencies upgrade to fix ([a69dd72](https://github.com/technology-studio/eslint-config-txo-typescript/commit/a69dd729e0ac1cd5ccdabe05f8c24045c042cdbe))
+* exclude additional root dev files in releases ([2701cfb](https://github.com/technology-studio/eslint-config-txo-typescript/commit/2701cfb59631ed431e6f7510c2832e3909c04ebf))
+* revent automergeType: branch ([8845d91](https://github.com/technology-studio/eslint-config-txo-typescript/commit/8845d91b68dc0a4a5c6da466b327a62f855f7c89))
+* set automerge type to branch for renovate to bypass reviews ([08da01f](https://github.com/technology-studio/eslint-config-txo-typescript/commit/08da01fb18470f3a57065b7174608af4c566ad53))
+
+
+### Bug fixes
+
+* use prepare lifecycle method for husky install ([07b6ad6](https://github.com/technology-studio/eslint-config-txo-typescript/commit/07b6ad61b9b8fbd4f72c20b95011e7632b969329))
+* use prepare lifecycle method for husky install ([#38](https://github.com/technology-studio/eslint-config-txo-typescript/issues/38)) ([487f3fb](https://github.com/technology-studio/eslint-config-txo-typescript/commit/487f3fb97f678490b1a608ced0dd4579d151c544))
+
 ## [3.0.5](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.0.4...v3.0.5) (2022-08-21)
 
 
