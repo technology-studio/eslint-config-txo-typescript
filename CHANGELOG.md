@@ -1,3 +1,10 @@
+## [3.1.3](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.2...v3.1.3) (2022-08-25)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-plugin-promise to ^6.0.1 ([5c059ca](https://github.com/technology-studio/eslint-config-txo-typescript/commit/5c059caaf19194138fe7fcb737a07be885b5182d))
+
 ## [3.1.2](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.1...v3.1.2) (2022-08-25)
 
 
