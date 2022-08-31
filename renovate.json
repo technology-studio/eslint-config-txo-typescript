@@ -13,5 +13,13 @@
       ],
       "semanticCommitType": "fix"
     }
+  ],
+  "assignees": [
+    "rostislav-simonik",
+    "erik-slovak"
+  ],
+  "reviewers": [
+    "rostislav-simonik",
+    "erik-slovak"
   ]
 }
