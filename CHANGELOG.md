@@ -1,3 +1,15 @@
+## [3.1.8](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.7...v3.1.8) (2022-08-31)
+
+
+### CI
+
+* add assignees and reviewers in renovate config for unmergable PRs ([7b8029d](https://github.com/technology-studio/eslint-config-txo-typescript/commit/7b8029d2cb6013941d5c01b3fb63ee0f84fb316a))
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-plugin-jest to v27 ([#52](https://github.com/technology-studio/eslint-config-txo-typescript/issues/52)) ([71375b3](https://github.com/technology-studio/eslint-config-txo-typescript/commit/71375b31b1a95e77201c804dfc0d700d8e7bd73a))
+
 ## [3.1.7](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.6...v3.1.7) (2022-08-30)
 
 
