@@ -1,3 +1,10 @@
+## [3.1.22](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.21...v3.1.22) (2022-09-23)
+
+
+### Bug fixes
+
+* ignore generics in comma-dangle rule ([#73](https://github.com/technology-studio/eslint-config-txo-typescript/issues/73)) ([8be42e2](https://github.com/technology-studio/eslint-config-txo-typescript/commit/8be42e2b0ab89f55369882a21d900ec94b1f3461))
+
 ## [3.1.21](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.20...v3.1.21) (2022-09-22)
 
 
