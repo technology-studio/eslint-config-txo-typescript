@@ -1,3 +1,10 @@
+## [3.1.26](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.25...v3.1.26) (2022-09-30)
+
+
+### Bug fixes
+
+* **deps:** update dependency jest to ^29.1.2 ([ceb5fca](https://github.com/technology-studio/eslint-config-txo-typescript/commit/ceb5fcaca2c6103b89f37937784a2bbd96d00777))
+
 ## [3.1.25](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.24...v3.1.25) (2022-09-28)
 
 
