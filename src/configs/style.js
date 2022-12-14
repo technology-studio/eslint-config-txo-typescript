@@ -9,6 +9,18 @@ module.exports = {
     'comma-dangle': 'off', // NOTE: this is handled by @typescript-eslint/comma-dangle
     'no-dupe-keys': 'error',
     'no-void': ['error', { allowAsStatement: true }],
-    'import/order': ['error', { 'newlines-between': 'always' }],
+    'import/order': ['error', {
+      'newlines-between': 'always',
+      groups: [
+        ['builtin', 'external'],
+        'internal',
+        'parent',
+        'sibling',
+        'index',
+      ],
+    }],
+    'no-restricted-imports': ['error', {
+      patterns: ['../**'],
+    }],
   },
 }
