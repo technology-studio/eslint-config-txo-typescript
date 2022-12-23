@@ -19,8 +19,5 @@ module.exports = {
         'index',
       ],
     }],
-    'no-restricted-imports': ['error', {
-      patterns: ['../**'],
-    }],
   },
 }
