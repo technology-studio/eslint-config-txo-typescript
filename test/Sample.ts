@@ -68,8 +68,7 @@ export const multilineCommaOk = {
 
 export const noReturnAwaitOk = async (): Promise<string> => Promise.resolve('try')
 
-// eslint-disable-next-line @typescript-eslint/return-await
-export const noReturnAwaitError = async (): Promise<void> => await new Promise(resolve => setTimeout(resolve, 100))
+export const noReturnAwaitError = async (): Promise<void> => { await new Promise(resolve => { setTimeout(resolve, 100) }) }
 
 export const returnAwaitInTryCatchOk = async (): Promise<string> => {
   try {
