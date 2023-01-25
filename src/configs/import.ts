@@ -6,6 +6,15 @@
 
 module.exports = {
   rules: {
-    'import/order': ['error', { 'newlines-between': 'always' }],
+    'import/order': ['error', {
+      'newlines-between': 'always',
+      groups: [
+        ['builtin', 'external'],
+        'internal',
+        'parent',
+        'sibling',
+        'index',
+      ],
+    }],
   },
 }
