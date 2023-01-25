@@ -1,3 +1,10 @@
+## [3.2.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.83...v3.2.0) (2023-01-25)
+
+
+### Features
+
+* add restriction to relative path imports and fix order of imports ([#149](https://github.com/technology-studio/eslint-config-txo-typescript/issues/149)) ([6006339](https://github.com/technology-studio/eslint-config-txo-typescript/commit/60063392c55fe59106cf2c5ec0ce36f130ac117c))
+
 ## [3.1.83](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.82...v3.1.83) (2023-01-25)
 
 
