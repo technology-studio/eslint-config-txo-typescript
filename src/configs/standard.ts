@@ -7,7 +7,7 @@
 module.exports = {
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
-    'no-console': 'warn',
+    'no-console': 'error',
     'no-unused-vars': 'error',
     'prefer-template': 'error',
     'keyword-spacing': 'off',

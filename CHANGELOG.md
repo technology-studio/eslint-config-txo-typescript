@@ -1,3 +1,122 @@
+## [3.1.83](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.82...v3.1.83) (2023-01-25)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-config-standard-with-typescript to v32 ([#182](https://github.com/technology-studio/eslint-config-txo-typescript/issues/182)) ([1211228](https://github.com/technology-studio/eslint-config-txo-typescript/commit/121122806e240a5a4901397d589ae62fdd5906ab))
+
+## [3.1.82](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.81...v3.1.82) (2023-01-24)
+
+
+### Bug fixes
+
+* **deps:** update dependency jest to ^29.4.0 ([67357dd](https://github.com/technology-studio/eslint-config-txo-typescript/commit/67357dddc65e5ba3dc890e86ea9795c7583870ab))
+
+## [3.1.81](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.80...v3.1.81) (2023-01-24)
+
+
+### Bug fixes
+
+* **deps:** update typescript-eslint monorepo to ^5.49.0 ([c0912c9](https://github.com/technology-studio/eslint-config-txo-typescript/commit/c0912c93f78ac6c2cc751a1954c7978c4f2ee369))
+
+## [3.1.80](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.79...v3.1.80) (2023-01-19)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-config-standard-with-typescript to v31 ([#176](https://github.com/technology-studio/eslint-config-txo-typescript/issues/176)) ([2dae937](https://github.com/technology-studio/eslint-config-txo-typescript/commit/2dae9377b825d5e2d95d478057698eb80c54d36b))
+
+## [3.1.79](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.78...v3.1.79) (2023-01-17)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-plugin-import to ^2.27.5 ([0584b71](https://github.com/technology-studio/eslint-config-txo-typescript/commit/0584b71e19136b59601361e761fa873db81980fe))
+
+## [3.1.78](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.77...v3.1.78) (2023-01-16)
+
+
+### Bug fixes
+
+* **deps:** update typescript-eslint monorepo to ^5.48.2 ([5088fc2](https://github.com/technology-studio/eslint-config-txo-typescript/commit/5088fc2ffca013dca0a13a437d7a4e5d4e38be7a))
+
+## [3.1.77](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.76...v3.1.77) (2023-01-15)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint to ^8.32.0 ([69cf7bf](https://github.com/technology-studio/eslint-config-txo-typescript/commit/69cf7bfe93f94ab9b662eb813f16e6350d162360))
+
+## [3.1.76](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.75...v3.1.76) (2023-01-12)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-plugin-import to ^2.27.4 ([54e3b91](https://github.com/technology-studio/eslint-config-txo-typescript/commit/54e3b91e1d9ab30aaf2f531f3d2eeaff287f9691))
+
+## [3.1.75](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.74...v3.1.75) (2023-01-11)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-import-resolver-typescript to ^3.5.3 ([89203a2](https://github.com/technology-studio/eslint-config-txo-typescript/commit/89203a2b0c2b1a482f4dfa21f61985569988ccbf))
+
+## [3.1.74](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.73...v3.1.74) (2023-01-11)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-plugin-n to ^15.6.1 ([857710c](https://github.com/technology-studio/eslint-config-txo-typescript/commit/857710cb58c2fb3a60793fa0327eca095f0977b7))
+
+## [3.1.73](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.72...v3.1.73) (2023-01-09)
+
+
+### Bug fixes
+
+* **deps:** update typescript-eslint monorepo to ^5.48.1 ([0721b56](https://github.com/technology-studio/eslint-config-txo-typescript/commit/0721b56887a0b1947cb676d833bf91b52502f4b7))
+
+## [3.1.72](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.71...v3.1.72) (2023-01-06)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-plugin-jest to ^27.2.1 ([b2dc0b4](https://github.com/technology-studio/eslint-config-txo-typescript/commit/b2dc0b440efdd4385d1b5403ba949d32130335be))
+
+## [3.1.71](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.70...v3.1.71) (2023-01-06)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-config-standard-with-typescript to v26 ([#160](https://github.com/technology-studio/eslint-config-txo-typescript/issues/160)) ([1168f1f](https://github.com/technology-studio/eslint-config-txo-typescript/commit/1168f1fc9b2adc90ca8528abfa3e0ba9e296db02))
+
+## [3.1.70](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.69...v3.1.70) (2023-01-02)
+
+
+### Bug fixes
+
+* **deps:** update typescript-eslint monorepo to ^5.48.0 ([c04be72](https://github.com/technology-studio/eslint-config-txo-typescript/commit/c04be726bcd68b818aa6b111a8f958591c1c0cd5))
+
+## [3.1.69](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.68...v3.1.69) (2023-01-01)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-plugin-jest to ^27.2.0 ([b4c965d](https://github.com/technology-studio/eslint-config-txo-typescript/commit/b4c965d66346acf604ed31fc57acfec78df9134a))
+
+## [3.1.68](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.67...v3.1.68) (2022-12-31)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint to ^8.31.0 ([8610094](https://github.com/technology-studio/eslint-config-txo-typescript/commit/861009402247779a0f0cf7b152081ae24e421ad6))
+
+## [3.1.67](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.66...v3.1.67) (2022-12-26)
+
+
+### Bug fixes
+
+* **deps:** update typescript-eslint monorepo to ^5.47.1 ([1ae5dc2](https://github.com/technology-studio/eslint-config-txo-typescript/commit/1ae5dc25d970b17c6f28822fb9fa4bb922bea7d3))
+
 ## [3.1.66](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.65...v3.1.66) (2022-12-19)
 
 
