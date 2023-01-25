@@ -1,3 +1,10 @@
+## [3.1.83](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.82...v3.1.83) (2023-01-25)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-config-standard-with-typescript to v32 ([#182](https://github.com/technology-studio/eslint-config-txo-typescript/issues/182)) ([1211228](https://github.com/technology-studio/eslint-config-txo-typescript/commit/121122806e240a5a4901397d589ae62fdd5906ab))
+
 ## [3.1.82](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.1.81...v3.1.82) (2023-01-24)
 
 
