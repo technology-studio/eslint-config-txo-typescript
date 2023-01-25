@@ -11,6 +11,10 @@
 type Sample = Record<string, unknown>
 
 // VALIDATION SAMPLES
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const noExplicitAnyError = (...args: any[]): any[] => args
+export const noExplicitAnyOk = (...args: string[]): string[] => args
+
 // eslint-disable-next-line @typescript-eslint/semi
 export type SemiError = Record<string, unknown>;
 export type SemiOk = Record<string, unknown>
@@ -66,9 +70,10 @@ export const multilineCommaOk = {
   b: '2',
 }
 
-export const noReturnAwaitOk = async (): Promise<string> => Promise.resolve('try')
+export const noReturnAwaitOk = async (): Promise<void> => { await new Promise(resolve => { setTimeout(resolve, 100) }) }
 
-export const noReturnAwaitError = async (): Promise<void> => { await new Promise(resolve => { setTimeout(resolve, 100) }) }
+// eslint-disable-next-line @typescript-eslint/return-await
+export const noReturnAwaitError = async (): Promise<string> => Promise.resolve('try')
 
 export const returnAwaitInTryCatchOk = async (): Promise<string> => {
   try {
@@ -87,8 +92,9 @@ export const returnAwaitInTryCatchError = async (): Promise<string> => {
   }
 }
 
-// TODO: fix wrong name, it's not clear what rule is tested.
-export const allowNullableObjectOk = ((Math.random() > 0.5) ? 'a' : false) ? 'ok' : 'Error'
+export const strictBooleanExpressionsOk = ((Math.random() > 0.5) ? 'a' != null : false) ? 'ok' : 'Error'
+// eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
+export const strictBooleanExpressionsError = ((Math.random() > 0.5) ? 'a' : false) ? 'ok' : 'Error'
 
 export const returnValueImmediatelyOk = (): string => 'value'
 

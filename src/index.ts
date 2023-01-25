@@ -15,9 +15,9 @@ module.exports = {
     ...[
       './configs/typescript',
       './configs/standard',
-      './configs/style',
-      './configs/eslint',
-    ].map(require.resolve),
+      './configs/import',
+      './configs/eslint-comments',
+    ].map(relativePath => require.resolve(relativePath)),
   ],
   parser: '@typescript-eslint/parser',
   plugins: [
