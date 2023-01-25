@@ -1,5 +1,5 @@
 {
-  "extends": "./src/index.js",
+  "extends": "./lib/index.js",
   "rules": {
     "prefer-destructuring": "off"
   },
