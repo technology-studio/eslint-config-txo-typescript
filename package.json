@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-txo-typescript",
-  "version": "3.2.10",
+  "version": "3.2.11",
   "description": "Technology Studio - Eslint typescript config",
   "main": "lib/index.js",
   "repository": {
