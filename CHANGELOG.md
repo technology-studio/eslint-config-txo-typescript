@@ -1,3 +1,10 @@
+## [3.2.14](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.2.13...v3.2.14) (2023-03-01)
+
+
+### Bug fixes
+
+* split rules between js and ts files ([#208](https://github.com/technology-studio/eslint-config-txo-typescript/issues/208)) ([fa0d800](https://github.com/technology-studio/eslint-config-txo-typescript/commit/fa0d800273c8095876d306c022b2bfff99c5dce6))
+
 ## [3.2.13](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.2.12...v3.2.13) (2023-02-28)
 
 
