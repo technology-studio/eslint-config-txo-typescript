@@ -1,3 +1,10 @@
+## [3.2.20](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.2.19...v3.2.20) (2023-03-20)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-formatter-pretty to v5 ([#219](https://github.com/technology-studio/eslint-config-txo-typescript/issues/219)) ([8248afb](https://github.com/technology-studio/eslint-config-txo-typescript/commit/8248afbe7422b6a1e197593d69ef40d6532af52a))
+
 ## [3.2.19](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.2.18...v3.2.19) (2023-03-14)
 
 
