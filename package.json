@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "eslint-config-standard-with-typescript": "^34.0.1",
-    "eslint-import-resolver-typescript": "^3.5.3"
+    "eslint-import-resolver-typescript": "^3.5.4"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.57.0",
