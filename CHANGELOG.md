@@ -1,3 +1,10 @@
+## [3.2.24](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.2.23...v3.2.24) (2023-03-30)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-import-resolver-typescript to ^3.5.4 ([65d4610](https://github.com/technology-studio/eslint-config-txo-typescript/commit/65d4610aefd7932cb96b0ccfec11e2dee6c1b54e))
+
 ## [3.2.23](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.2.22...v3.2.23) (2023-03-29)
 
 
