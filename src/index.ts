@@ -9,7 +9,8 @@ module.exports = {
     {
       files: ['*.ts', '*.tsx'],
       extends: [
-        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-type-checked',
+        'plugin:@typescript-eslint/stylistic-type-checked',
         'standard-with-typescript',
         'plugin:jest/recommended',
         'plugin:eslint-comments/recommended',
@@ -27,7 +28,7 @@ module.exports = {
         '@typescript-eslint',
       ],
       parserOptions: {
-        project: './tsconfig.json',
+        project: true,
       },
       rules: {
         strict: 'error',
