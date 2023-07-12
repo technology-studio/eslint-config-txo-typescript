@@ -27,10 +27,6 @@ export const arrayStyleComplexTypeOk: Record<string, unknown>[] = []
 export const arrayStyleSimlpeTypeError: Array<Sample>[] = []
 export const arrayStyleSimpleTypeOk: Sample[] = []
 
-// eslint-disable-next-line @typescript-eslint/no-inferrable-types
-export const noInferrableTypesError: boolean = true
-export const noInferrableTypesOk = true
-
 // eslint-disable-next-line @typescript-eslint/member-delimiter-style
 export type DelimiterDangleAError = { foo: boolean, }
 export type DelimiterDangleBError = {
