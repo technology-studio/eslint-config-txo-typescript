@@ -1,3 +1,10 @@
+## [3.2.56](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.2.55...v3.2.56) (2023-07-12)
+
+
+### Bug fixes
+
+* **deps:** update typescript-eslint monorepo to v6 (major) ([#290](https://github.com/technology-studio/eslint-config-txo-typescript/issues/290)) ([2764ff3](https://github.com/technology-studio/eslint-config-txo-typescript/commit/2764ff3f6759ddb75c84c073d28bb946a4c00de5))
+
 ## [3.2.55](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.2.54...v3.2.55) (2023-07-10)
 
 
