@@ -1,25 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
-    ":semanticCommits",
-    ":automergeMinor"
+    "github>technology-studio/renovate-config"
   ],
-  "rangeStrategy": "bump",
   "packageRules": [
     {
-      "matchDepTypes": [
-        "peerDependencies"
+      "groupName": "Eslint txo packages",
+      "groupSlug": "eslint-txo-packages",
+      "matchPackagePrefixes": [
+        "@typescript-eslint/",
+        "eslint"
       ],
+      "automerge": true,
+      "separateMajorMinor": false,
       "semanticCommitType": "fix"
     }
-  ],
-  "assignees": [
-    "rostislav-simonik",
-    "erik-slovak"
-  ],
-  "reviewers": [
-    "rostislav-simonik",
-    "erik-slovak"
   ]
 }
