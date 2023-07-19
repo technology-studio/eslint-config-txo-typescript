@@ -2,5 +2,18 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>technology-studio/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "groupName": "Eslint txo packages",
+      "groupSlug": "eslint-txo-packages",
+      "matchPackagePrefixes": [
+        "@typescript-eslint/",
+        "eslint"
+      ],
+      "automerge": true,
+      "separateMajorMinor": false,
+      "semanticCommitType": "fix"
+    }
   ]
 }
