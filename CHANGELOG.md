@@ -1,3 +1,10 @@
+## [3.2.61](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.2.60...v3.2.61) (2023-07-19)
+
+
+### Bug fixes
+
+* sync sanity and test commands with react config ([#298](https://github.com/technology-studio/eslint-config-txo-typescript/issues/298)) ([a1c4031](https://github.com/technology-studio/eslint-config-txo-typescript/commit/a1c403137073304f1963b302a9273aeb7b553cc2))
+
 ## [3.2.60](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.2.59...v3.2.60) (2023-07-17)
 
 
