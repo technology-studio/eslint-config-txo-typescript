@@ -18,11 +18,11 @@
     "lint": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx .",
     "fixcode": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx . --fix",
     "git-hook": "yarn -s lint",
-    "test": "yarn lint",
+    "test": "yarn compile && yarn lint",
     "ncu-all": "ncu -i",
     "compile": "tsc",
     "prepare": "husky install && yarn compile",
-    "sanity": "yarn lint && tsc --noEmit && yarn outdated && echo 'success'",
+    "sanity": "yarn test && yarn outdated && echo 'success'",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
