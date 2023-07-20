@@ -17,7 +17,7 @@ module.exports = {
       exports: 'always-multiline',
       functions: 'always-multiline',
       enums: 'always-multiline',
-      generics: 'always-multiline',
+      generics: 'ignore',
       tuples: 'always-multiline',
     }],
     '@typescript-eslint/keyword-spacing': ['error'],
