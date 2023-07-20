@@ -1,3 +1,5 @@
+## [3.2.62](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.2.61...v3.2.62) (2023-07-20)
+
 ## [3.2.61](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.2.60...v3.2.61) (2023-07-19)
 
 
