@@ -16,7 +16,7 @@ module.exports = {
         'index',
       ],
     }],
-    ...(process.env.ESLINT_HEAVY_RULES != null
+    ...(process.env.DISABLE_ESLINT_HEAVY_RULES != null
       ? undefined
       : {
           'import/namespace': 'off',
