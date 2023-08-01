@@ -1,3 +1,10 @@
+## [3.3.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.2.67...v3.3.0) (2023-08-01)
+
+
+### Features
+
+* add `ESLINT_HEAVY_RULES` env and use it to disable `import/namespace` ([#304](https://github.com/technology-studio/eslint-config-txo-typescript/issues/304)) ([8079d09](https://github.com/technology-studio/eslint-config-txo-typescript/commit/8079d09cf45706a1aa05e208f85e8106ea23b104))
+
 ## [3.2.67](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.2.66...v3.2.67) (2023-07-31)
 
 
