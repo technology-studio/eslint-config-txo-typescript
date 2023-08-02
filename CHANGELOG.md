@@ -1,3 +1,10 @@
+## [3.3.1](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.3.0...v3.3.1) (2023-08-02)
+
+
+### Bug fixes
+
+* rename environment variable name for heavy rules ([#307](https://github.com/technology-studio/eslint-config-txo-typescript/issues/307)) ([0de084b](https://github.com/technology-studio/eslint-config-txo-typescript/commit/0de084bb283f4952ffcc5b1366bc9e9f83b93b45))
+
 ## [3.3.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.2.67...v3.3.0) (2023-08-01)
 
 
