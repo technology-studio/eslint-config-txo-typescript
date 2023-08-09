@@ -16,11 +16,11 @@ module.exports = {
         'index',
       ],
     }],
-    ...(process.env.ENABLE_ESLINT_HEAVY_RULES != null
-      ? undefined
-      : {
+    ...(process.env.DISABLE_ESLINT_HEAVY_RULES != null
+      ? {
           'import/namespace': 'off',
         }
+      : undefined
     ),
   },
 }
