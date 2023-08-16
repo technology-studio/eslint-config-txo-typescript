@@ -6,9 +6,7 @@
 
 module.exports = {
   rules: {
-    'eslint-comments/no-unused-disable': process.env.DISABLE_ESLINT_HEAVY_RULES != null
-      ? 'off'
-      : 'error',
     'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
+    'eslint-comments/no-unused-disable': 'error',
   },
 }
