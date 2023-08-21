@@ -1,3 +1,10 @@
+## [3.3.8](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.3.7...v3.3.8) (2023-08-21)
+
+
+### Bug fixes
+
+* **deps:** update eslint txo packages to ^6.4.1 ([1db5bc7](https://github.com/technology-studio/eslint-config-txo-typescript/commit/1db5bc776d685b98871785e55ad48392d1240b48))
+
 ## [3.3.7](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.3.6...v3.3.7) (2023-08-21)
 
 
