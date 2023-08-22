@@ -1,3 +1,10 @@
+## [3.3.10](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.3.9...v3.3.10) (2023-08-22)
+
+
+### Bug fixes
+
+* remove heavy rules condition ([#316](https://github.com/technology-studio/eslint-config-txo-typescript/issues/316)) ([e91ee78](https://github.com/technology-studio/eslint-config-txo-typescript/commit/e91ee78d2c666f4f90a7711b31bfaff1f359164e))
+
 ## [3.3.9](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.3.8...v3.3.9) (2023-08-22)
 
 
