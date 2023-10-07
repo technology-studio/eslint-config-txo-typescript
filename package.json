@@ -26,7 +26,7 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "eslint-config-standard-with-typescript": "^39.1.0",
+    "eslint-config-standard-with-typescript": "^39.1.1",
     "eslint-import-resolver-typescript": "^3.6.1"
   },
   "peerDependencies": {
