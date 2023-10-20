@@ -1,3 +1,10 @@
+## [3.4.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.3.33...v3.4.0) (2023-10-20)
+
+
+### Features
+
+* disable require-await ([#356](https://github.com/technology-studio/eslint-config-txo-typescript/issues/356)) ([33363b0](https://github.com/technology-studio/eslint-config-txo-typescript/commit/33363b019a19d9bd0874766ca0876854a226df51))
+
 ## [3.3.33](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.3.32...v3.3.33) (2023-10-16)
 
 
