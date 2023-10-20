@@ -74,5 +74,6 @@ module.exports = {
         },
       },
     ],
+    '@typescript-eslint/require-await': 'off',
   },
 }
