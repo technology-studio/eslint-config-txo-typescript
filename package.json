@@ -45,7 +45,7 @@
     "jest": "^29.7.0"
   },
   "devDependencies": {
-    "@txo/commitlint": "^1.0.3",
+    "@txo/commitlint": "^1.0.4",
     "@txo/semantic-release": "^1.0.0",
     "@types/eslint": "^8.44.6",
     "@types/jest": "^29.5.6",
