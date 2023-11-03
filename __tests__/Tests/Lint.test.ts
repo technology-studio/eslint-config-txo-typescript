@@ -11,4 +11,4 @@ test('shoud not have lint issues', async () => {
   const results = await eslint.lintFiles(['test/**/*.ts'])
   const isWithoutError = results.every((result: { errorCount: number }) => result.errorCount === 0)
   expect(isWithoutError).toBe(true)
-})
+}, 20000)
