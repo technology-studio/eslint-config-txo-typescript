@@ -18,7 +18,7 @@ import { standardRules } from './configs/standard'
 import { importRules } from './configs/import'
 import { eslintCommentsRules } from './configs/eslint-comments'
 
-const jest = require('eslint-plugin-jest')
+const jestPlugin = require('eslint-plugin-jest')
 const { FlatCompat } = require('@eslint/eslintrc')
 const Parser = require('@typescript-eslint/parser')
 const typescriptEslintPlugin = require('@typescript-eslint/eslint-plugin')
@@ -67,11 +67,11 @@ const config: Linter.FlatConfig[] = [
     plugins: {
       ...typescriptExtends.plugins,
       '@typescript-eslint': typescriptEslintPlugin,
-      jest,
+      jest: jestPlugin,
     },
     rules: {
       ...typescriptExtends.rules,
-      ...jest.configs.recommended.rules,
+      ...jestPlugin.configs.recommended.rules,
       strict: 'error',
       ...typescriptRules,
       ...standardRules,

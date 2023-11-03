@@ -4,11 +4,11 @@
  * @Copyright: Technology Studio
 **/
 
-import { ESLint } from 'eslint'
+const { FlatESLint } = require("eslint/use-at-your-own-risk")
 
 test('shoud not have lint issues', async () => {
-  const eslint = new ESLint()
+  const eslint = new FlatESLint()
   const results = await eslint.lintFiles(['test/**/*.ts'])
-  const isWithoutError = results.every((result) => result.errorCount === 0)
+  const isWithoutError = results.every((result: { errorCount: number }) => result.errorCount === 0)
   expect(isWithoutError).toBe(true)
 })

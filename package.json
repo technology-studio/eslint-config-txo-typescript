@@ -23,7 +23,7 @@
     "prepare": "husky install && yarn compile",
     "sanity": "yarn lint && yarn test && tsc --noEmit && yarn outdated && echo 'success'",
     "semantic-release": "semantic-release",
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "engines": {
     "node": ">=18.0.0"
