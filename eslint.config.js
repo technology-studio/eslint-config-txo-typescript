@@ -1,8 +1,5 @@
 const txoConfig = require('./lib/index.js')
 
-// console.log(txoConfig.default)
-// console.log(JSON.stringify(txoConfig.default, null, 2))
-
 const [typescriptConfig, ...restConfigs] = txoConfig.default
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
