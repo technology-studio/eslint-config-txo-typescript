@@ -15,7 +15,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint --max-warnings 0 .",
     "fixcode": "eslint . --fix",
     "git-hook": "yarn -s lint",
     "ncu-all": "ncu -i",
