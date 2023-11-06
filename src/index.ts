@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
@@ -10,7 +9,6 @@
 **/
 
 import type { Linter } from 'eslint'
-import { deepMergeIgnoreNil } from '@txo/functional'
 import globals from 'globals'
 
 import { typescriptRules } from './configs/typescript'
@@ -21,86 +19,79 @@ import { eslintCommentsRules } from './configs/eslint-comments'
 const jestPlugin = require('eslint-plugin-jest')
 const { FlatCompat } = require('@eslint/eslintrc')
 const Parser = require('@typescript-eslint/parser')
-const typescriptEslintPlugin = require('@typescript-eslint/eslint-plugin')
 
 const compat = new FlatCompat({
   baseDirectory: __dirname,
 })
 
-const mergeConfigs = (configs: Linter.FlatConfig[]): Linter.FlatConfig => (
-  configs.reduce<Linter.FlatConfig>((flatConfig, config) => (deepMergeIgnoreNil(flatConfig, config) as Linter.FlatConfig), {})
-)
-
-const typescriptExtends = mergeConfigs(compat.extends(
-  'plugin:@typescript-eslint/recommended-type-checked',
-  'plugin:@typescript-eslint/stylistic-type-checked',
-  'standard-with-typescript',
-  'plugin:@eslint-community/eslint-comments/recommended',
-  'plugin:import/recommended',
-  'plugin:import/typescript',
-))
-const javascriptExtends = mergeConfigs(compat.extends(
-  'standard',
-  'plugin:@eslint-community/eslint-comments/recommended',
-  'plugin:import/recommended',
-))
+const typescriptConfig = {
+  files: ['**/*.ts', '**/*.tsx'],
+  languageOptions: {
+    globals: {
+      ...globals.jest,
+    },
+    parser: Parser,
+    parserOptions: {
+      project: './tsconfig.json',
+    },
+  },
+  plugins: {
+    jest: jestPlugin,
+  },
+  rules: {
+    ...jestPlugin.configs.recommended.rules,
+    strict: 'error',
+    ...typescriptRules,
+    ...standardRules,
+    ...importRules,
+    ...eslintCommentsRules,
+  },
+  settings: {
+    'import/resolver': {
+      typescript: true,
+    },
+  },
+}
 
 const config: Linter.FlatConfig[] = [
   {
-    ...typescriptExtends,
-    files: ['**/*.ts', '**/*.tsx'],
+    ignores: [
+      'commitlint.config.js',
+      'jest.config.js',
+      'lib',
+      'release.config.js',
+      'eslint.config.js',
+    ],
+  },
+  ...compat.extends(
+    'plugin:@typescript-eslint/recommended-type-checked',
+    'plugin:@typescript-eslint/stylistic-type-checked',
+    'standard-with-typescript',
+    'plugin:@eslint-community/eslint-comments/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+  ),
+  typescriptConfig,
+  {
+    files: ['__tests__/**/*.ts'],
     languageOptions: {
-      ...typescriptExtends.languageOptions,
-      globals: {
-        ...typescriptExtends.languageOptions?.globals,
-        ...globals.jest,
-      },
-      parser: Parser,
       parserOptions: {
-        project: './tsconfig.json',
-      },
-    },
-    linterOptions: {
-      ...typescriptExtends.linterOptions,
-      reportUnusedDisableDirectives: true,
-    },
-    plugins: {
-      ...typescriptExtends.plugins,
-      '@typescript-eslint': typescriptEslintPlugin,
-      jest: jestPlugin,
-    },
-    rules: {
-      ...typescriptExtends.rules,
-      ...jestPlugin.configs.recommended.rules,
-      strict: 'error',
-      ...typescriptRules,
-      ...standardRules,
-      ...importRules,
-      ...eslintCommentsRules,
-    },
-    settings: {
-      ...typescriptExtends.settings,
-      'import/resolver': {
-        typescript: true,
+        project: './__tests__/tsconfig.json',
       },
     },
   },
   {
-    ...javascriptExtends,
+    linterOptions: {
+      reportUnusedDisableDirectives: true,
+    },
+  },
+  {
     files: ['**/*.js', '**/*.jsx'],
     rules: {
-      ...javascriptExtends.rules,
       strict: 'error',
       ...standardRules,
       ...importRules,
       ...eslintCommentsRules,
-    },
-    linterOptions: {
-      ...javascriptExtends.linterOptions,
-      reportUnusedDisableDirectives: true,
-    },
-    plugins: {
-      ...javascriptExtends.plugins,
     },
   },
 ]
