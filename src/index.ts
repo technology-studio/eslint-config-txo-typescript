@@ -27,19 +27,12 @@ const compat = new FlatCompat({
 const typescriptConfig = {
   files: ['**/*.ts', '**/*.tsx'],
   languageOptions: {
-    globals: {
-      ...globals.jest,
-    },
     parser: Parser,
     parserOptions: {
       project: './tsconfig.json',
     },
   },
-  plugins: {
-    jest: jestPlugin,
-  },
   rules: {
-    ...jestPlugin.configs.recommended.rules,
     strict: 'error',
     ...typescriptRules,
     ...standardRules,
@@ -50,6 +43,25 @@ const typescriptConfig = {
     'import/resolver': {
       typescript: true,
     },
+  },
+}
+
+const jestConfig = {
+  files: ['**/__tests__/**/*.ts'],
+  languageOptions: {
+    globals: {
+      ...globals.jest,
+    },
+    parser: Parser,
+    parserOptions: {
+      project: './__tests__/tsconfig.json',
+    },
+  },
+  plugins: {
+    jest: jestPlugin,
+  },
+  rules: {
+    ...jestPlugin.configs.recommended.rules,
   },
 }
 
@@ -72,14 +84,7 @@ const config: Linter.FlatConfig[] = [
     'plugin:import/typescript',
   ),
   typescriptConfig,
-  {
-    files: ['__tests__/**/*.ts'],
-    languageOptions: {
-      parserOptions: {
-        project: './__tests__/tsconfig.json',
-      },
-    },
-  },
+  jestConfig,
   {
     linterOptions: {
       reportUnusedDisableDirectives: true,
