@@ -29,7 +29,7 @@
       "cwd": "${workspaceFolder}",
       "runtimeArgs": [
         "eslint",
-        "__tests__/Tests/Fields/MutationFields/MutationCreateAuthorizationField.test.ts"
+        "${relativeFile}"
       ],
       "sourceMaps": true,
     }
