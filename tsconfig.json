@@ -1,7 +1,6 @@
 {
   "extends": "@txo/tsconfig",
   "compilerOptions": {
-    "resolveJsonModule": true,
     "noEmit": false,
     "outDir": "lib"
   },
