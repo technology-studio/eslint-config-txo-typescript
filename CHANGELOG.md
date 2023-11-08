@@ -1,3 +1,26 @@
+## [4.0.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.4.0...v4.0.0) (2023-11-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* move to new eslint flat config
+
+### Features
+
+* move to new eslint flat config ([#391](https://github.com/technology-studio/eslint-config-txo-typescript/issues/391)) ([a83972c](https://github.com/technology-studio/eslint-config-txo-typescript/commit/a83972ce5c706402837262e2d20df336de5b9e64))
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint to ^8.53.0 ([49c0509](https://github.com/technology-studio/eslint-config-txo-typescript/commit/49c050982038b9b2f76dc32a52d8887d609307f5))
+* **deps:** update dependency eslint-plugin-import to ^2.29.0 ([a21a499](https://github.com/technology-studio/eslint-config-txo-typescript/commit/a21a4991cda0d0191070cea17100c16a98198375))
+* **deps:** update dependency eslint-plugin-jest to ^27.6.0 ([ee36683](https://github.com/technology-studio/eslint-config-txo-typescript/commit/ee3668365e651d30ebc1ce9139668d8a1bf2c810))
+* **deps:** update dependency eslint-plugin-n to ^16.3.0 ([8e70387](https://github.com/technology-studio/eslint-config-txo-typescript/commit/8e70387a61e7864dce1c8706d3576341f759821c))
+* **deps:** update eslint txo packages ([c1545d7](https://github.com/technology-studio/eslint-config-txo-typescript/commit/c1545d7c1dba322b203b6f4bbc7722a2d4769432))
+* **deps:** update eslint txo packages to ^6.10.0 ([d50cf5f](https://github.com/technology-studio/eslint-config-txo-typescript/commit/d50cf5f4055c5cfd845f9745f52f8622fa93b39f))
+* **deps:** update eslint txo packages to ^6.9.0 ([ae8df32](https://github.com/technology-studio/eslint-config-txo-typescript/commit/ae8df322a88315c44a270d24ac43da1e6154b054))
+* **deps:** update eslint txo packages to ^6.9.1 ([fb612b1](https://github.com/technology-studio/eslint-config-txo-typescript/commit/fb612b17a75bc461db0a387e008b9cf3b042a9e5))
+
 ## [3.4.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.3.33...v3.4.0) (2023-10-20)
 
 
