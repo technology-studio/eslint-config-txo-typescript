@@ -1,13 +1,7 @@
 {
+  "extends": "@txo/tsconfig",
   "compilerOptions": {
-    "lib": ["esnext"],
-    "strict": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "strictBindCallApply": true,
-    "strictFunctionTypes": true,
-    "sourceMap": true,
+    "noEmit": false,
     "outDir": "lib"
   },
   "include": [

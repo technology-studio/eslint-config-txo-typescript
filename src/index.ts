@@ -1,60 +1,105 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-var-requires */
 /**
  * @Author: Rostislav Simonik <rostislav.simonik@technologystudio.sk>
  * @Date: 2020-06-10T16:06:00+02:00
  * @Copyright: Technology Studio
 **/
 
-module.exports = {
-  overrides: [
-    {
-      files: ['*.ts', '*.tsx'],
-      extends: [
-        'plugin:@typescript-eslint/recommended-type-checked',
-        'plugin:@typescript-eslint/stylistic-type-checked',
-        'standard-with-typescript',
-        'plugin:jest/recommended',
-        'plugin:eslint-comments/recommended',
-        'plugin:import/recommended',
-        'plugin:import/typescript',
-        ...[
-          './configs/typescript',
-          './configs/standard',
-          './configs/import',
-          './configs/eslint-comments',
-        ].map(relativePath => require.resolve(relativePath)),
-      ],
-      parser: '@typescript-eslint/parser',
-      plugins: [
-        '@typescript-eslint',
-      ],
-      parserOptions: {
-        project: true,
-      },
-      rules: {
-        strict: 'error',
-      },
-      settings: {
-        'import/resolver': {
-          typescript: true,
-        },
-      },
+import type { Linter } from 'eslint'
+import globals from 'globals'
+
+import { typescriptRules } from './configs/typescript'
+import { standardRules } from './configs/standard'
+import { importRules } from './configs/import'
+import { eslintCommentsRules } from './configs/eslint-comments'
+
+const jestPlugin = require('eslint-plugin-jest')
+const { FlatCompat } = require('@eslint/eslintrc')
+const Parser = require('@typescript-eslint/parser')
+
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+})
+
+const typescriptConfig = {
+  files: ['**/*.ts', '**/*.tsx'],
+  languageOptions: {
+    parser: Parser,
+    parserOptions: {
+      project: './tsconfig.json',
     },
-    {
-      files: ['*.js', '*.jsx'],
-      extends: [
-        'standard',
-        'plugin:jest/recommended',
-        'plugin:eslint-comments/recommended',
-        'plugin:import/recommended',
-        ...[
-          './configs/standard',
-          './configs/import',
-          './configs/eslint-comments',
-        ].map(relativePath => require.resolve(relativePath)),
-      ],
-      rules: {
-        strict: 'error',
-      },
+  },
+  rules: {
+    strict: 'error',
+    ...typescriptRules,
+    ...standardRules,
+    ...importRules,
+    ...eslintCommentsRules,
+  },
+  settings: {
+    'import/resolver': {
+      typescript: true,
     },
-  ],
+  },
 }
+
+const jestConfig = {
+  files: ['**/__tests__/**/*.ts'],
+  languageOptions: {
+    globals: {
+      ...globals.jest,
+    },
+    parser: Parser,
+    parserOptions: {
+      project: './__tests__/tsconfig.json',
+    },
+  },
+  plugins: {
+    jest: jestPlugin,
+  },
+  rules: {
+    ...jestPlugin.configs.recommended.rules,
+  },
+}
+
+const config: Linter.FlatConfig[] = [
+  {
+    ignores: [
+      'commitlint.config.js',
+      'jest.config.js',
+      'lib',
+      'release.config.js',
+      'eslint.config.js',
+      'coverage',
+    ],
+  },
+  ...compat.extends(
+    'plugin:@typescript-eslint/recommended-type-checked',
+    'plugin:@typescript-eslint/stylistic-type-checked',
+    'standard-with-typescript',
+    'plugin:@eslint-community/eslint-comments/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+  ),
+  typescriptConfig,
+  jestConfig,
+  {
+    linterOptions: {
+      reportUnusedDisableDirectives: true,
+    },
+  },
+  {
+    files: ['**/*.js', '**/*.jsx'],
+    rules: {
+      strict: 'error',
+      ...standardRules,
+      ...importRules,
+      ...eslintCommentsRules,
+    },
+  },
+]
+
+export default config

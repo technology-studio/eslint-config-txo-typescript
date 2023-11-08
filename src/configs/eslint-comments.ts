@@ -4,9 +4,8 @@
  * @Copyright: Technology Studio
 **/
 
-module.exports = {
-  rules: {
-    'eslint-comments/no-unused-disable': 'error',
-    'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
-  },
+import type { Linter } from 'eslint'
+
+export const eslintCommentsRules: Linter.RulesRecord = {
+  '@eslint-community/eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
 }
