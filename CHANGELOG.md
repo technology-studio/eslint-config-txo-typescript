@@ -1,3 +1,10 @@
+## [4.0.2](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.1...v4.0.2) (2023-11-08)
+
+
+### Bug fixes
+
+* initiale void fix release ([e87995d](https://github.com/technology-studio/eslint-config-txo-typescript/commit/e87995d1cf641016905784025517e1769af5d11a))
+
 ## [4.0.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v3.4.0...v4.0.0) (2023-11-08)
 
 
