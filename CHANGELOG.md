@@ -1,3 +1,10 @@
+## [4.0.3](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.2...v4.0.3) (2023-11-09)
+
+
+### Bug fixes
+
+* add workaround to fix issues with `eslint-plugin-import` ([#398](https://github.com/technology-studio/eslint-config-txo-typescript/issues/398)) ([8443e0b](https://github.com/technology-studio/eslint-config-txo-typescript/commit/8443e0b4c818d7742b8aee13a5038d304028c9ae))
+
 ## [4.0.2](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.1...v4.0.2) (2023-11-08)
 
 
