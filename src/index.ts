@@ -30,6 +30,8 @@ const typescriptConfig = {
     parser: Parser,
     parserOptions: {
       project: './tsconfig.json',
+      ecmaVersion: 'latest', // NOTE: added to fix issue with eslint-plugin-import
+      sourceType: 'module', // NOTE: added to fix issue with eslint-plugin-import
     },
   },
   rules: {
@@ -40,8 +42,13 @@ const typescriptConfig = {
     ...eslintCommentsRules,
   },
   settings: {
+    // NOTE: added to fix issue with eslint-plugin-import
+    'import/parsers': {
+      espree: ['.js', '.cjs', '.mjs', '.jsx'],
+    },
     'import/resolver': {
       typescript: true,
+      node: true, // NOTE: added to fix issue with eslint-plugin-import
     },
   },
 }
