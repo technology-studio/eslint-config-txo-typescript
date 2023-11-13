@@ -1,3 +1,10 @@
+## [4.0.7](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.6...v4.0.7) (2023-11-13)
+
+
+### Bug fixes
+
+* ignore dist folder ([#404](https://github.com/technology-studio/eslint-config-txo-typescript/issues/404)) ([d326529](https://github.com/technology-studio/eslint-config-txo-typescript/commit/d326529df02609d2a1d94c989728e4fd5935ad99))
+
 ## [4.0.6](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.5...v4.0.6) (2023-11-13)
 
 
