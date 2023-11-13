@@ -1,3 +1,17 @@
+## [4.0.6](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.5...v4.0.6) (2023-11-13)
+
+
+### Bug fixes
+
+* **deps:** update eslint txo packages to ^6.11.0 ([5f5a7ff](https://github.com/technology-studio/eslint-config-txo-typescript/commit/5f5a7ff4c14d8bacfb569d473cd8c549505fdfcc))
+
+## [4.0.5](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.4...v4.0.5) (2023-11-13)
+
+
+### Bug fixes
+
+* add support for tsx in Jest config ([#401](https://github.com/technology-studio/eslint-config-txo-typescript/issues/401)) ([5b5ef81](https://github.com/technology-studio/eslint-config-txo-typescript/commit/5b5ef81ff2f20f45ec7fc9cc95163598dbbdb95b))
+
 ## [4.0.4](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.3...v4.0.4) (2023-11-10)
 
 

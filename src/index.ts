@@ -54,7 +54,7 @@ const typescriptConfig = {
 }
 
 const jestConfig = {
-  files: ['**/__tests__/**/*.ts'],
+  files: ['**/__tests__/**/*.ts', '**/__tests__/**/*.tsx'],
   languageOptions: {
     globals: {
       ...globals.jest,
@@ -62,6 +62,13 @@ const jestConfig = {
     parser: Parser,
     parserOptions: {
       project: './__tests__/tsconfig.json',
+    },
+  },
+  settings: {
+    'import/resolver': {
+      typescript: {
+        project: './__tests__/tsconfig.json',
+      },
     },
   },
   plugins: {
