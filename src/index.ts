@@ -50,6 +50,12 @@ const typescriptConfig = {
       typescript: true,
       node: true, // NOTE: added to fix issue with eslint-plugin-import - https://github.com/import-js/eslint-plugin-import/issues/2556
     },
+    settings: {
+      'import/ignore': [
+        'react-native',
+        'react-native-keychain',
+      ],
+    },
   },
 }
 
