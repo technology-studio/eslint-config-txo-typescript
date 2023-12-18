@@ -1,3 +1,10 @@
+## [4.0.22](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.21...v4.0.22) (2023-12-18)
+
+
+### Bug fixes
+
+* **deps:** update eslint txo packages to ^6.15.0 ([ba27a3a](https://github.com/technology-studio/eslint-config-txo-typescript/commit/ba27a3ab1c0509030227c96e94a811683f27c825))
+
 ## [4.0.21](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.20...v4.0.21) (2023-12-16)
 
 
