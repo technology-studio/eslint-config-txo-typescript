@@ -51,7 +51,7 @@
     "@types/jest": "^29.5.11",
     "husky": "^8.0.3",
     "jest": "^29.7.0",
-    "npm-check-updates": "^16.14.12",
+    "npm-check-updates": "^16.14.13",
     "ts-jest": "^29.1.2",
     "typescript": "^5.3.3"
   }
