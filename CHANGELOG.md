@@ -1,3 +1,10 @@
+## [4.0.39](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.38...v4.0.39) (2024-02-13)
+
+
+### Bug fixes
+
+* **deps:** update dependency globals to v14 ([#471](https://github.com/technology-studio/eslint-config-txo-typescript/issues/471)) ([f4bf815](https://github.com/technology-studio/eslint-config-txo-typescript/commit/f4bf815e89974f75d316a9c60173ea236fb53d9e))
+
 ## [4.0.38](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.37...v4.0.38) (2024-02-13)
 
 
