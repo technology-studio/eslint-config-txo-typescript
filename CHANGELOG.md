@@ -1,3 +1,10 @@
+## [4.0.41](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.40...v4.0.41) (2024-02-16)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-plugin-jest to ^27.9.0 ([4e0d4ff](https://github.com/technology-studio/eslint-config-txo-typescript/commit/4e0d4ff71ab0613e35129e926075f70fb0518dc3))
+
 ## [4.0.40](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.39...v4.0.40) (2024-02-13)
 
 
