@@ -465,10 +465,10 @@
   dependencies:
     chalk "^4.1.0"
 
-"@eslint-community/eslint-plugin-eslint-comments@^4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@eslint-community/eslint-plugin-eslint-comments/-/eslint-plugin-eslint-comments-4.2.0.tgz#15a996c34104e6ca8e9b08b2f8ccd9523e766b4d"
-  integrity sha512-t+1TfaJO+4xgBotNWguwTEVShTbaGvxBbC9VuMqHejSXf37SderUyXLRi3MwiMgUSGDuTYR3qcUP4pHtIH/35A==
+"@eslint-community/eslint-plugin-eslint-comments@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@eslint-community/eslint-plugin-eslint-comments/-/eslint-plugin-eslint-comments-4.3.0.tgz#e356a280764e14b1db9c94d0be7fab405431e2a6"
+  integrity sha512-6e93KtgsndNkvwCCa07LOQJSwzzLLxwrFll3+huyFoiiQXWG0KBcmo0Q1bVgYQQDLfWOOZl2VPBsXqZL6vHIBQ==
   dependencies:
     escape-string-regexp "^4.0.0"
     ignore "^5.2.4"
