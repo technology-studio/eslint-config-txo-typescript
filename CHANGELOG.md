@@ -1,3 +1,10 @@
+## [4.0.52](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.51...v4.0.52) (2024-04-09)
+
+
+### Bug fixes
+
+* **deps:** update dependency @eslint-community/eslint-plugin-eslint-comments to ^4.3.0 ([c8f2d37](https://github.com/technology-studio/eslint-config-txo-typescript/commit/c8f2d3780b7acc3b55a4f142a7479a242d1f7fa2))
+
 ## [4.0.51](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.50...v4.0.51) (2024-04-07)
 
 
