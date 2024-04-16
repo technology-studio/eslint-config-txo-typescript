@@ -20,7 +20,7 @@
     "git-hook": "yarn -s lint",
     "ncu-all": "ncu -i",
     "compile": "tsc",
-    "prepare": "husky install && yarn compile",
+    "prepare": "husky && yarn compile",
     "sanity": "yarn lint && yarn test && tsc --noEmit && yarn outdated && echo 'success'",
     "semantic-release": "semantic-release",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
