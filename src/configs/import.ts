@@ -17,4 +17,7 @@ export const importRules: Linter.RulesRecord = {
       'index',
     ],
   }],
+  'import/no-unresolved': ['error', {
+    ignore: ['GraphQl'],
+  }],
 }
