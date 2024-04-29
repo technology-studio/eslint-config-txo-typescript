@@ -1,3 +1,10 @@
+## [4.0.56](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.55...v4.0.56) (2024-04-29)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo/semantic-release to v2 ([#467](https://github.com/technology-studio/eslint-config-txo-typescript/issues/467)) ([2f05a99](https://github.com/technology-studio/eslint-config-txo-typescript/commit/2f05a991b2ee24b2eab55be97321ca54dddd18f4))
+
 ## [4.0.55](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.54...v4.0.55) (2024-04-28)
 
 
