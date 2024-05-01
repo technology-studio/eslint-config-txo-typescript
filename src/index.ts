@@ -95,7 +95,7 @@ const config: Linter.FlatConfig[] = [
   ...compat.extends(
     'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
-    'standard-with-typescript',
+    'love',
     'plugin:@eslint-community/eslint-comments/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
