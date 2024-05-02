@@ -86,6 +86,7 @@ const config: Linter.FlatConfig[] = [
       'jest.config.js',
       'lib',
       'release.config.js',
+      '.releaserc.js',
       'eslint.config.js',
       'coverage',
       'dist',

@@ -1,3 +1,59 @@
+## [4.0.56](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.55...v4.0.56) (2024-04-29)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo/semantic-release to v2 ([#467](https://github.com/technology-studio/eslint-config-txo-typescript/issues/467)) ([2f05a99](https://github.com/technology-studio/eslint-config-txo-typescript/commit/2f05a991b2ee24b2eab55be97321ca54dddd18f4))
+
+## [4.0.55](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.54...v4.0.55) (2024-04-28)
+
+
+### Bug fixes
+
+* **deps:** update dependency globals to ^15.1.0 ([b0b171b](https://github.com/technology-studio/eslint-config-txo-typescript/commit/b0b171b1aeaf1ae9baa7d35b0e1eba39a599e4a6))
+
+## [4.0.54](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.53...v4.0.54) (2024-04-23)
+
+
+### Bug fixes
+
+* **deps:** update eslint txo packages ([b9562b5](https://github.com/technology-studio/eslint-config-txo-typescript/commit/b9562b5a71794feba65cabb06307cc97b9f4c299))
+
+## [4.0.53](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.52...v4.0.53) (2024-04-10)
+
+
+### Bug fixes
+
+* **deps:** update dependency globals to v15 ([#494](https://github.com/technology-studio/eslint-config-txo-typescript/issues/494)) ([14a1b4a](https://github.com/technology-studio/eslint-config-txo-typescript/commit/14a1b4a00749ad56fefe1679ab75056728a7454c))
+
+## [4.0.52](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.51...v4.0.52) (2024-04-09)
+
+
+### Bug fixes
+
+* **deps:** update dependency @eslint-community/eslint-plugin-eslint-comments to ^4.3.0 ([c8f2d37](https://github.com/technology-studio/eslint-config-txo-typescript/commit/c8f2d3780b7acc3b55a4f142a7479a242d1f7fa2))
+
+## [4.0.51](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.50...v4.0.51) (2024-04-07)
+
+
+### Bug fixes
+
+* **deps:** update dependency @eslint-community/eslint-plugin-eslint-comments to ^4.2.0 ([4d17810](https://github.com/technology-studio/eslint-config-txo-typescript/commit/4d17810209e4128457d1f534432ab195b4985d9f))
+
+## [4.0.50](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.49...v4.0.50) (2024-04-02)
+
+
+### Bug fixes
+
+* **deps:** update eslint txo packages to ^7.5.0 ([7bca88f](https://github.com/technology-studio/eslint-config-txo-typescript/commit/7bca88fe0a0afe1a4c98eb2390a08e9cf93ef394))
+
+## [4.0.49](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.48...v4.0.49) (2024-03-26)
+
+
+### Bug fixes
+
+* **deps:** update eslint txo packages to ^7.4.0 ([d38055f](https://github.com/technology-studio/eslint-config-txo-typescript/commit/d38055f4fcced4eaf3be3b70f4946abd00685eac))
+
 ## [4.0.48](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.47...v4.0.48) (2024-03-19)
 
 
