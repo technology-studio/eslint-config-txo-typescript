@@ -1,3 +1,10 @@
+## [4.0.57](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.56...v4.0.57) (2024-05-07)
+
+
+### Bug fixes
+
+* disable deprecated indent rule ([#491](https://github.com/technology-studio/eslint-config-txo-typescript/issues/491)) ([73b1271](https://github.com/technology-studio/eslint-config-txo-typescript/commit/73b1271151b09342fde0fc0b2337380b842cdacb))
+
 ## [4.0.56](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.55...v4.0.56) (2024-04-29)
 
 
