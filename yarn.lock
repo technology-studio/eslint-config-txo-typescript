@@ -1460,10 +1460,10 @@
     "@types/estree" "*"
     "@types/json-schema" "*"
 
-"@types/eslint__eslintrc@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@types/eslint__eslintrc/-/eslint__eslintrc-2.1.1.tgz#1735099e28e4ed4e0ca4dddd4f9c2027c1a77585"
-  integrity sha512-LI51vVv3N7WI4+fM7Xkh1+ciLA1gtuQPgXdKdece+vD8f/G2hrFqtwb4YIQyIM6VXpRM4vSy1PW5y3yuHK+Y2w==
+"@types/eslint__eslintrc@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@types/eslint__eslintrc/-/eslint__eslintrc-2.1.2.tgz#a067aed15c09066970f905407d98c8c4ad22287c"
+  integrity sha512-qXvzPFY7Rz05xD8ZApXJ3S8xStQD2Ibzu3EFIF0UMNOAfLY5xUu3H61q0JrHo2OXD6rcFG75yUxNQbkKtFKBSw==
   dependencies:
     "@types/eslint" "*"
 
