@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-txo-typescript",
-  "version": "4.0.64",
+  "version": "4.0.65",
   "description": "Technology Studio - Eslint typescript config",
   "main": "lib/index.js",
   "repository": {
@@ -39,7 +39,7 @@
     "eslint-plugin-jest": "^27.9.0",
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
-    "globals": "^15.8.0"
+    "globals": "^15.9.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.1.0",
