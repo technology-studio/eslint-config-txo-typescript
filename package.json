@@ -21,9 +21,10 @@
     "ncu-all": "ncu -i",
     "compile": "tsc",
     "prepare": "husky && yarn compile",
-    "sanity": "yarn lint && yarn test && tsc --noEmit && yarn outdated && echo 'success'",
+    "sanity": "yarn lint:ci && yarn test && tsc --noEmit && yarn outdated && echo 'success'",
     "semantic-release": "semantic-release",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint:ci": "yarn lint"
   },
   "engines": {
     "node": ">=18.0.0"
