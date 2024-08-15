@@ -1,3 +1,15 @@
+## [4.0.66](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.65...v4.0.66) (2024-08-15)
+
+
+### CI
+
+* add lint command for CI ([#545](https://github.com/technology-studio/eslint-config-txo-typescript/issues/545)) ([6fa04c8](https://github.com/technology-studio/eslint-config-txo-typescript/commit/6fa04c8330791b3c6cb1543a7374339094745da6))
+
+
+### Bug fixes
+
+* **deps:** update dependency @eslint-community/eslint-plugin-eslint-comments to ^4.4.0 ([0c0d4f3](https://github.com/technology-studio/eslint-config-txo-typescript/commit/0c0d4f353196c8b23661fb7f494cb5cfbd0086c7))
+
 ## [4.0.65](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.64...v4.0.65) (2024-08-01)
 
 
