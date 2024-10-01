@@ -1,3 +1,16 @@
+## [4.0.67](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.66...v4.0.67) (2024-10-01)
+
+
+### CI
+
+* rename workflows ([#554](https://github.com/technology-studio/eslint-config-txo-typescript/issues/554)) ([4cc8dba](https://github.com/technology-studio/eslint-config-txo-typescript/commit/4cc8dbaf0739cd5c288f1a5d12e8efae947cdd50))
+* update URL for code-quality ([#551](https://github.com/technology-studio/eslint-config-txo-typescript/issues/551)) ([73ea332](https://github.com/technology-studio/eslint-config-txo-typescript/commit/73ea332a77f09479de744c020e0b8ff25c9146c4))
+
+
+### Bug fixes
+
+* **deps:** update dependency globals to ^15.10.0 ([b5304c8](https://github.com/technology-studio/eslint-config-txo-typescript/commit/b5304c83854b7d0808d310732562ae4eb852b440))
+
 ## [4.0.66](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.65...v4.0.66) (2024-08-15)
 
 
