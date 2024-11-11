@@ -1,8 +1,13 @@
-const txoConfig = require('./lib/index.js')
+const stylisticPlugin = require('@stylistic/eslint-plugin')
+
+const {
+  typescriptConfig,
+  typescriptEslintStylisticTypeCheckedConfigList,
+  ignoreList,
+} = require('./lib/index.js')
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 const config = [
-  ...txoConfig.default,
   {
     files: ['test/**/*.ts'],
     languageOptions: {
@@ -11,12 +16,21 @@ const config = [
       }
     }
   },
+  // TODO: remove after migrating to prettier
   {
     files: ['**/*.ts'],
-    rules: {
-      '@typescript-eslint/no-magic-numbers': 'off' // We can allow numbers in the configs
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+      },
     },
+    plugins: {
+      '@stylistic': stylisticPlugin,
+    }
   },
+  // TODO: remove after migrating to prettier
+  ...typescriptEslintStylisticTypeCheckedConfigList,
+  ignoreList,
 ]
 
 module.exports = config

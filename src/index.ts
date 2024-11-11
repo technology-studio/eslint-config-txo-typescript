@@ -5,12 +5,11 @@
 **/
 
 import globals from 'globals'
-import typescriptEslint, {
+import {
   configs as typescriptEslintConfigs,
   parser,
 } from 'typescript-eslint'
 import type { TSESLint } from '@typescript-eslint/utils'
-import love from 'eslint-config-love'
 import eslintComments from '@eslint-community/eslint-plugin-eslint-comments/configs'
 import { flatConfigs as eslintImportFlatConfigs } from 'eslint-plugin-import'
 import eslintImportRecommendedFlatConfig from 'eslint-plugin-import/config/flat/recommended'
@@ -22,16 +21,15 @@ import { standardRules } from './configs/standard'
 import { importRules } from './configs/import'
 import { eslintCommentsRules } from './configs/eslint-comments'
 
-const stylisticConfig: TSESLint.FlatConfig.Config = {
-  files: ['**/*.ts', '**/*.tsx'],
+// TODO: remove after migrating to prettier
+export const stylisticConfig: TSESLint.FlatConfig.Config = {
   ...stylistic.configs.customize({
     flat: true,
     braceStyle: '1tbs',
   }),
 }
 
-const typescriptConfig: TSESLint.FlatConfig.Config = {
-  files: ['**/*.ts', '**/*.tsx'],
+export const typescriptConfig: TSESLint.FlatConfig.Config = {
   languageOptions: {
     parser,
     parserOptions: {
@@ -55,8 +53,7 @@ const typescriptConfig: TSESLint.FlatConfig.Config = {
   },
 }
 
-const jestConfig: TSESLint.FlatConfig.Config = {
-  files: ['**/__tests__/**/*.ts', '**/__tests__/**/*.tsx'],
+export const jestConfig: TSESLint.FlatConfig.Config = {
   languageOptions: {
     globals: {
       ...globals.jest,
@@ -81,46 +78,46 @@ const jestConfig: TSESLint.FlatConfig.Config = {
   },
 }
 
-const config = typescriptEslint.config(
+export const ignoreList: TSESLint.FlatConfig.Config = {
+  ignores: [
+    'commitlint.config.js',
+    'jest.config.js',
+    'lib',
+    'release.config.js',
+    '.releaserc.js',
+    'eslint.config.js',
+    'coverage',
+    'dist',
+  ],
+}
+
+export const typescriptEslintRecommendedTypeCheckedConfigList: TSESLint.FlatConfig.ConfigArray = typescriptEslintConfigs.recommendedTypeChecked
+export const typescriptEslintStylisticTypeCheckedConfigList: TSESLint.FlatConfig.ConfigArray = typescriptEslintConfigs.stylisticTypeChecked
+
+export { default as loveConfig } from 'eslint-config-love'
+
+export const eslintCommentsConfig = eslintComments.recommended
+
+export const eslintImportConfigList = [
   {
-    ignores: [
-      'commitlint.config.js',
-      'jest.config.js',
-      'lib',
-      'release.config.js',
-      '.releaserc.js',
-      'eslint.config.js',
-      'coverage',
-      'dist',
-    ],
-  },
-  ...typescriptEslintConfigs.recommendedTypeChecked,
-  ...typescriptEslintConfigs.stylisticTypeChecked,
-  love,
-  eslintComments.recommended,
-  // manually create the `eslint-plugin-import` recommended config because `eslint-config-love` already defines `plugins.import` which causes a conflict
-  {
+    // manually create the `eslint-plugin-import` recommended config because `eslint-config-love` already defines it in `plugins.import` which causes a conflict
     name: 'import/recommended',
     ...eslintImportRecommendedFlatConfig,
   },
   eslintImportFlatConfigs.typescript,
-  stylisticConfig,
-  typescriptConfig,
-  jestConfig,
-  {
-    linterOptions: {
-      reportUnusedDisableDirectives: true,
-    },
-  },
-  {
-    files: ['**/*.js', '**/*.jsx'],
-    rules: {
-      strict: 'error',
-      ...standardRules,
-      ...importRules,
-      ...eslintCommentsRules,
-    },
-  },
-)
+]
 
-export default config
+export const linterOptionsConfig: TSESLint.FlatConfig.Config = {
+  linterOptions: {
+    reportUnusedDisableDirectives: true,
+  },
+}
+
+export const javascriptConfig: TSESLint.FlatConfig.Config = {
+  rules: {
+    strict: 'error',
+    ...standardRules,
+    ...importRules,
+    ...eslintCommentsRules,
+  },
+}

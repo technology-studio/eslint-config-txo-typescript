@@ -1,6 +1,7 @@
 {
   "extends": "@txo/tsconfig",
   "compilerOptions": {
+    "declaration": true,
     "noEmit": false,
     "outDir": "lib",
     "typeRoots": [
