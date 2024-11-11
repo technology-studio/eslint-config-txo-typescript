@@ -10,7 +10,13 @@ const config = [
         project: './tsconfig.test.json'
       }
     }
-  }
+  },
+  {
+    files: ['**/*.ts'],
+    rules: {
+      '@typescript-eslint/no-magic-numbers': 'off' // We can allow numbers in the configs
+    },
+  },
 ]
 
 module.exports = config

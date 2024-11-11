@@ -12,7 +12,7 @@ export const standardRules: Linter.RulesRecord = {
   'no-unused-vars': 'off',
   'prefer-template': 'error',
   'keyword-spacing': 'off',
-  camelcase: 'off',
+  'camelcase': 'off',
   'object-curly-newline': [
     'error',
     {

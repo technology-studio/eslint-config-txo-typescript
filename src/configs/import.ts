@@ -9,7 +9,7 @@ import type { Linter } from 'eslint'
 export const importRules: Linter.RulesRecord = {
   'import/order': ['error', {
     'newlines-between': 'always',
-    groups: [
+    'groups': [
       ['builtin', 'external'],
       'internal',
       'parent',

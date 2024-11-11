@@ -15,7 +15,7 @@ type Sample = Record<string, unknown>
 export const noExplicitAnyError = (...args: any[]): any[] => args
 export const noExplicitAnyOk = (...args: string[]): string[] => args
 
-// eslint-disable-next-line @typescript-eslint/semi
+// eslint-disable-next-line @stylistic/semi
 export type SemiError = Record<string, unknown>;
 export type SemiOk = Record<string, unknown>
 
@@ -31,10 +31,10 @@ export const arrayStyleSimpleTypeOk: Sample[] = []
 export const noInferrableTypesError: boolean = true
 export const noInferrableTypesOk = true
 
-// eslint-disable-next-line @typescript-eslint/member-delimiter-style
+// eslint-disable-next-line @stylistic/member-delimiter-style
 export type DelimiterDangleAError = { foo: boolean, }
 export type DelimiterDangleBError = {
-  // eslint-disable-next-line @typescript-eslint/member-delimiter-style
+  // eslint-disable-next-line @stylistic/member-delimiter-style
   foo: boolean
 }
 export type DelimiterDangleAOk = { foo: boolean }
@@ -62,7 +62,7 @@ export type ConsistentTypeDefinitionsOk = { a: boolean }
 
 export const multilineCommaError = {
   a: '1',
-  // eslint-disable-next-line @typescript-eslint/comma-dangle
+  // eslint-disable-next-line @stylistic/comma-dangle
   b: '2'
 }
 export const multilineCommaOk = {
@@ -70,7 +70,11 @@ export const multilineCommaOk = {
   b: '2',
 }
 
-export const noReturnAwaitOk = async (): Promise<void> => { await new Promise(resolve => { setTimeout(resolve, 100) }) }
+export const noReturnAwaitOk = async (): Promise<void> => {
+  await new Promise((resolve) => {
+    setTimeout(resolve, 100)
+  })
+}
 
 // eslint-disable-next-line @typescript-eslint/return-await
 export const noReturnAwaitError = async (): Promise<string> => Promise.resolve('try')
@@ -92,6 +96,7 @@ export const returnAwaitInTryCatchError = async (): Promise<string> => {
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition -- we need a literal value to test
 export const strictBooleanExpressionsOk = ((Math.random() > 0.5) ? 'a' != null : false) ? 'ok' : 'Error'
 // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
 export const strictBooleanExpressionsError = ((Math.random() > 0.5) ? 'a' : false) ? 'ok' : 'Error'
