@@ -5,7 +5,7 @@ const {
   stylisticConfig,
   ignoreList,
   typescriptConfigList,
-} = require('./lib/index.js')
+} = require('./lib')
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 const config = tseslint.config(
