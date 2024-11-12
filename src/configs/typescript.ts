@@ -60,20 +60,6 @@ export const typescriptRules: Linter.RulesRecord = {
     },
   }],
   '@typescript-eslint/consistent-type-definitions': 'off',
-  '@typescript-eslint/no-restricted-types': [
-    'error',
-    {
-      types: {
-        object: {
-          message: [
-            'The `object` type is currently hard to use ([see this issue](https://github.com/microsoft/TypeScript/issues/21732)).',
-            'Consider using `Record<string, unknown>` instead, as it allows you to more easily inspect and use the keys.',
-          ].join('\n'),
-          fixWith: 'Record<string, unknown>',
-        },
-      },
-    },
-  ],
   '@typescript-eslint/require-await': 'off',
   '@stylistic/indent': 'off',
   '@stylistic/jsx-quotes': ['error', 'prefer-single'],

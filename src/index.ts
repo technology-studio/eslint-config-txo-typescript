@@ -10,12 +10,11 @@ import {
   parser,
 } from 'typescript-eslint'
 import type { TSESLint } from '@typescript-eslint/utils'
-import eslintComments from '@eslint-community/eslint-plugin-eslint-comments/configs'
-import { flatConfigs as eslintImportFlatConfigs } from 'eslint-plugin-import'
-import eslintImportRecommendedFlatConfig from 'eslint-plugin-import/config/flat/recommended'
-import stylistic from '@stylistic/eslint-plugin'
-import jestPlugin from 'eslint-plugin-jest'
-import loveConfig from 'eslint-config-love'
+import eslintPluginEslintCommunityEslintComments from '@eslint-community/eslint-plugin-eslint-comments/configs'
+import { flatConfigs as eslintPluginImportFlatConfigs } from 'eslint-plugin-import'
+import eslintPluginStylistic from '@stylistic/eslint-plugin'
+import eslintPluginJest from 'eslint-plugin-jest'
+import eslintConfigLove from 'eslint-config-love'
 
 import { typescriptRules } from './configs/typescript'
 import { loveRules } from './configs/love'
@@ -25,7 +24,7 @@ import { eslintCommentsRules } from './configs/eslint-comments'
 // TODO: remove after migrating to prettier
 /** @deprecated will be replaced with prettier */
 export const stylisticConfig: TSESLint.FlatConfig.Config = {
-  ...stylistic.configs.customize({
+  ...eslintPluginStylistic.configs.customize({
     flat: true,
     braceStyle: '1tbs',
   }),
@@ -41,14 +40,9 @@ export const typescriptConfigList: TSESLint.FlatConfig.ConfigArray = [
   linterOptionsConfig,
   ...typescriptEslintConfigs.recommendedTypeChecked,
   ...typescriptEslintConfigs.stylisticTypeChecked,
-  loveConfig,
-  eslintComments.recommended,
-  {
-    // manually create the `eslint-plugin-import` recommended config because `eslint-config-love` already defines it in `plugins.import` which causes a conflict
-    name: 'import/recommended',
-    ...eslintImportRecommendedFlatConfig,
-  },
-  eslintImportFlatConfigs.typescript,
+  eslintPluginEslintCommunityEslintComments.recommended,
+  eslintPluginImportFlatConfigs.typescript,
+  eslintConfigLove,
   {
     languageOptions: {
       parser,
@@ -62,14 +56,6 @@ export const typescriptConfigList: TSESLint.FlatConfig.ConfigArray = [
       ...loveRules,
       ...importRules,
       ...eslintCommentsRules,
-    },
-    settings: {
-      'import/parsers': {
-        espree: ['.js', '.cjs', '.mjs', '.jsx'],
-      },
-      'import/resolver': {
-        typescript: true,
-      },
     },
   },
 ]
@@ -92,10 +78,10 @@ export const jestConfig: TSESLint.FlatConfig.Config = {
     },
   },
   plugins: {
-    jest: jestPlugin,
+    jest: eslintPluginJest,
   },
   rules: {
-    ...jestPlugin.configs.recommended.rules,
+    ...eslintPluginJest.configs.recommended.rules,
   },
 }
 

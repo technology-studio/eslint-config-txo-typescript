@@ -1,5 +1,4 @@
-const tseslint = require('typescript-eslint')
-const stylisticPlugin = require('@stylistic/eslint-plugin')
+const typescriptEslint = require('typescript-eslint')
 
 const {
   stylisticConfig,
@@ -8,31 +7,14 @@ const {
 } = require('./lib')
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
-const config = tseslint.config(
+const config = typescriptEslint.config(
   // TODO: remove after migrating to prettier
   {
     files: ['**/*.ts'],
     extends: [
-      {
-        languageOptions: {
-          parserOptions: {
-            projectService: true,
-          },
-        },
-      },
-      {
-        plugins: {
-          '@stylistic': stylisticPlugin,
-        }
-      },
       ...typescriptConfigList,
       // TODO: remove after migrating to prettier
       stylisticConfig,
-      {
-        rules: {
-          '@typescript-eslint/no-magic-numbers': 'off',
-        },
-      },
     ],
   },
   {
