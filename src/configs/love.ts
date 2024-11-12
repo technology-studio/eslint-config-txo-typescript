@@ -6,7 +6,7 @@
 
 import type { Linter } from 'eslint'
 
-export const standardRules: Linter.RulesRecord = {
+export const loveRules: Linter.RulesRecord = {
   'arrow-body-style': ['error', 'as-needed'],
   'no-console': 'error',
   'no-unused-vars': 'off',

@@ -1,28 +1,50 @@
+const tseslint = require('typescript-eslint')
 const stylisticPlugin = require('@stylistic/eslint-plugin')
 
 const {
-  typescriptConfig,
-  typescriptEslintStylisticTypeCheckedConfigList,
+  stylisticConfig,
   ignoreList,
+  typescriptConfigList,
 } = require('./lib/index.js')
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
-const config = [
+const config = tseslint.config(
   // TODO: remove after migrating to prettier
   {
     files: ['**/*.ts'],
-    languageOptions: {
-      parserOptions: {
-        projectService: true,
+    extends: [
+      {
+        languageOptions: {
+          parserOptions: {
+            projectService: true,
+          },
+        },
       },
-    },
-    plugins: {
-      '@stylistic': stylisticPlugin,
-    }
+      {
+        plugins: {
+          '@stylistic': stylisticPlugin,
+        }
+      },
+      ...typescriptConfigList,
+      // TODO: remove after migrating to prettier
+      stylisticConfig,
+      {
+        rules: {
+          '@typescript-eslint/no-magic-numbers': 'off',
+        },
+      },
+    ],
   },
-  // TODO: remove after migrating to prettier
-  ...typescriptEslintStylisticTypeCheckedConfigList,
-  ignoreList,
-]
+  {
+    ignores: [
+      'commitlint.config.js',
+      'jest.config.js',
+      'lib',
+      '.releaserc.js',
+      'eslint.config.js',
+      'coverage',
+    ]
+  }
+)
 
 module.exports = config

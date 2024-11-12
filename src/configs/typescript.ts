@@ -75,5 +75,6 @@ export const typescriptRules: Linter.RulesRecord = {
     },
   ],
   '@typescript-eslint/require-await': 'off',
-  '@typescript-eslint/indent': 'off',
+  '@stylistic/indent': 'off',
+  '@stylistic/jsx-quotes': ['error', 'prefer-single'],
 }
