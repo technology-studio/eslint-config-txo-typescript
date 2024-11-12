@@ -8,14 +8,6 @@ const {
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 const config = [
-  {
-    files: ['test/**/*.ts'],
-    languageOptions: {
-      parserOptions: {
-        project: './tsconfig.test.json'
-      }
-    }
-  },
   // TODO: remove after migrating to prettier
   {
     files: ['**/*.ts'],
