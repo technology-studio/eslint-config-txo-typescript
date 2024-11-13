@@ -16,5 +16,11 @@ export const importRules: Linter.RulesRecord = {
       'sibling',
       'index',
     ],
+    'pathGroups': [
+      {
+        pattern: '@/**',
+        group: 'internal',
+      },
+    ],
   }],
 }
