@@ -45,6 +45,8 @@ export const typescriptConfigList: TSESLint.FlatConfig.ConfigArray = [
   eslintConfigLove,
   {
     languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
       parser,
       parserOptions: {
         projectService: true,
