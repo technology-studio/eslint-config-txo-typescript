@@ -7,6 +7,12 @@
 // NOTE: Use name of rule for variables or types
 
 // VALIDATION SAMPLES
+
+// eslint-disable-next-line import/order, @typescript-eslint/no-unused-vars
+import type { importRules } from '../src/configs/import'
+// eslint-disable-next-line import/order, @typescript-eslint/no-unused-vars
+import type globals from 'globals'
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const noExplicitAnyError = (...args: any[]): any[] => args
 export const noExplicitAnyOk = (...args: string[]): string[] => args
