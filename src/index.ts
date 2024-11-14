@@ -10,8 +10,8 @@ import {
   parser,
 } from 'typescript-eslint'
 import type { TSESLint } from '@typescript-eslint/utils'
-import eslintPluginEslintCommunityEslintComments from '@eslint-community/eslint-plugin-eslint-comments/configs'
-import { flatConfigs as eslintPluginImportFlatConfigs } from 'eslint-plugin-import'
+import eslintPluginEslintComments from '@eslint-community/eslint-plugin-eslint-comments/configs'
+import { flatConfigs as eslintPluginImportConfigs } from 'eslint-plugin-import'
 import eslintPluginStylistic from '@stylistic/eslint-plugin'
 import eslintPluginJest from 'eslint-plugin-jest'
 import eslintConfigLove from 'eslint-config-love'
@@ -40,8 +40,8 @@ export const typescriptConfigList: TSESLint.FlatConfig.ConfigArray = [
   linterOptionsConfig,
   ...typescriptEslintConfigs.recommendedTypeChecked,
   ...typescriptEslintConfigs.stylisticTypeChecked,
-  eslintPluginEslintCommunityEslintComments.recommended,
-  eslintPluginImportFlatConfigs.typescript,
+  eslintPluginEslintComments.recommended,
+  eslintPluginImportConfigs.typescript,
   eslintConfigLove,
   {
     languageOptions: {
