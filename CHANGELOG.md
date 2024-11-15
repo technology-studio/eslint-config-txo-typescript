@@ -1,3 +1,14 @@
+## [5.0.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.70...v5.0.0) (2024-11-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* Refactor package to export atomic eslint config rule groups to be used in project configs
+
+### Features
+
+* upgrade to eslint v9 and fix breaking changes ([#574](https://github.com/technology-studio/eslint-config-txo-typescript/issues/574)) ([89bf8a8](https://github.com/technology-studio/eslint-config-txo-typescript/commit/89bf8a82ca156730044e18476689fa84191d7cc4))
+
 ## [4.0.70](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.69...v4.0.70) (2024-11-04)
 
 
