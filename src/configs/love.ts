@@ -6,13 +6,13 @@
 
 import type { Linter } from 'eslint'
 
-export const standardRules: Linter.RulesRecord = {
+export const loveRules: Linter.RulesRecord = {
   'arrow-body-style': ['error', 'as-needed'],
   'no-console': 'error',
   'no-unused-vars': 'off',
   'prefer-template': 'error',
   'keyword-spacing': 'off',
-  camelcase: 'off',
+  'camelcase': 'off',
   'object-curly-newline': [
     'error',
     {
@@ -27,6 +27,7 @@ export const standardRules: Linter.RulesRecord = {
       ImportDeclaration: {
         consistent: true,
         multiline: true,
+        // eslint-disable-next-line @typescript-eslint/no-magic-numbers
         minProperties: 2,
       },
       ExportDeclaration: {

@@ -1,4 +1,5 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable @typescript-eslint/no-magic-numbers */
+/* eslint-disable @typescript-eslint/no-require-imports */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
@@ -8,10 +9,10 @@
  * @Copyright: Technology Studio
 **/
 
-const { FlatESLint } = require('eslint/use-at-your-own-risk')
+const { ESLint } = require('eslint')
 
 test('shoud not have lint issues', async () => {
-  const eslint = new FlatESLint()
+  const eslint = new ESLint()
   const results = await eslint.lintFiles(['test/**/*.ts'])
   const isWithoutError = results.every((result: { errorCount: number }) => result.errorCount === 0)
   expect(isWithoutError).toBe(true)

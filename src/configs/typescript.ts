@@ -11,7 +11,7 @@ export const typescriptRules: Linter.RulesRecord = {
     default: 'array',
     readonly: 'array',
   }],
-  '@typescript-eslint/comma-dangle': ['error', {
+  '@stylistic/comma-dangle': ['error', {
     arrays: 'always-multiline',
     objects: 'always-multiline',
     imports: 'always-multiline',
@@ -21,7 +21,7 @@ export const typescriptRules: Linter.RulesRecord = {
     generics: 'ignore',
     tuples: 'always-multiline',
   }],
-  '@typescript-eslint/keyword-spacing': ['error'],
+  '@stylistic/keyword-spacing': ['error'],
   '@typescript-eslint/naming-convention': [
     'error',
     {
@@ -49,7 +49,7 @@ export const typescriptRules: Linter.RulesRecord = {
     },
   ],
   '@typescript-eslint/no-explicit-any': ['error'],
-  '@typescript-eslint/member-delimiter-style': ['error', {
+  '@stylistic/member-delimiter-style': ['error', {
     multiline: {
       delimiter: 'comma',
       requireLast: true,
@@ -60,21 +60,7 @@ export const typescriptRules: Linter.RulesRecord = {
     },
   }],
   '@typescript-eslint/consistent-type-definitions': 'off',
-  '@typescript-eslint/ban-types': [
-    'error',
-    {
-      extendDefaults: true,
-      types: {
-        object: {
-          message: [
-            'The `object` type is currently hard to use ([see this issue](https://github.com/microsoft/TypeScript/issues/21732)).',
-            'Consider using `Record<string, unknown>` instead, as it allows you to more easily inspect and use the keys.',
-          ].join('\n'),
-          fixWith: 'Record<string, unknown>',
-        },
-      },
-    },
-  ],
   '@typescript-eslint/require-await': 'off',
-  '@typescript-eslint/indent': 'off',
+  '@stylistic/indent': 'off',
+  '@stylistic/jsx-quotes': ['error', 'prefer-single'],
 }

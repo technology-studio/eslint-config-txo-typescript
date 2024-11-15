@@ -1,65 +1,73 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-var-requires */
 /**
  * @Author: Rostislav Simonik <rostislav.simonik@technologystudio.sk>
  * @Date: 2020-06-10T16:06:00+02:00
  * @Copyright: Technology Studio
 **/
 
-import type { Linter } from 'eslint'
 import globals from 'globals'
+import {
+  configs as typescriptEslintConfigs,
+  parser,
+} from 'typescript-eslint'
+import type { TSESLint } from '@typescript-eslint/utils'
+import eslintPluginEslintComments from '@eslint-community/eslint-plugin-eslint-comments/configs'
+import { flatConfigs as eslintPluginImportConfigs } from 'eslint-plugin-import'
+import eslintPluginStylistic from '@stylistic/eslint-plugin'
+import eslintPluginJest from 'eslint-plugin-jest'
+import eslintConfigLove from 'eslint-config-love'
 
 import { typescriptRules } from './configs/typescript'
-import { standardRules } from './configs/standard'
+import { loveRules } from './configs/love'
 import { importRules } from './configs/import'
 import { eslintCommentsRules } from './configs/eslint-comments'
 
-const jestPlugin = require('eslint-plugin-jest')
-const { FlatCompat } = require('@eslint/eslintrc')
-const Parser = require('@typescript-eslint/parser')
+// TODO: remove after migrating to prettier
+/** @deprecated will be replaced with prettier */
+export const stylisticConfig: TSESLint.FlatConfig.Config = {
+  ...eslintPluginStylistic.configs.customize({
+    flat: true,
+    braceStyle: '1tbs',
+  }),
+}
 
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-})
-
-const typescriptConfig = {
-  files: ['**/*.ts', '**/*.tsx'],
-  languageOptions: {
-    parser: Parser,
-    parserOptions: {
-      project: './tsconfig.json',
-      ecmaVersion: 'latest', // NOTE: added to fix issue with eslint-plugin-import - https://github.com/import-js/eslint-plugin-import/issues/2556
-      sourceType: 'module', // NOTE: added to fix issue with eslint-plugin-import - https://github.com/import-js/eslint-plugin-import/issues/2556
-    },
-  },
-  rules: {
-    strict: 'error',
-    ...typescriptRules,
-    ...standardRules,
-    ...importRules,
-    ...eslintCommentsRules,
-  },
-  settings: {
-    // NOTE: added to fix issue with eslint-plugin-import - https://github.com/import-js/eslint-plugin-import/issues/2556
-    'import/parsers': {
-      espree: ['.js', '.cjs', '.mjs', '.jsx'],
-    },
-    'import/resolver': {
-      typescript: true,
-      node: true, // NOTE: added to fix issue with eslint-plugin-import - https://github.com/import-js/eslint-plugin-import/issues/2556
-    },
+const linterOptionsConfig: TSESLint.FlatConfig.Config = {
+  linterOptions: {
+    reportUnusedDisableDirectives: true,
   },
 }
 
-const jestConfig = {
-  files: ['**/__tests__/**/*.ts', '**/__tests__/**/*.tsx'],
+export const typescriptConfigList: TSESLint.FlatConfig.ConfigArray = [
+  linterOptionsConfig,
+  ...typescriptEslintConfigs.recommendedTypeChecked,
+  ...typescriptEslintConfigs.stylisticTypeChecked,
+  eslintPluginEslintComments.recommended,
+  eslintPluginImportConfigs.typescript,
+  eslintConfigLove,
+  {
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      parser,
+      parserOptions: {
+        projectService: true,
+      },
+    },
+    rules: {
+      strict: 'error',
+      ...typescriptRules,
+      ...loveRules,
+      ...importRules,
+      ...eslintCommentsRules,
+    },
+  },
+]
+
+export const jestConfig: TSESLint.FlatConfig.Config = {
   languageOptions: {
     globals: {
       ...globals.jest,
     },
-    parser: Parser,
+    parser,
     parserOptions: {
       project: './__tests__/tsconfig.json',
     },
@@ -72,50 +80,19 @@ const jestConfig = {
     },
   },
   plugins: {
-    jest: jestPlugin,
+    jest: eslintPluginJest,
   },
   rules: {
-    ...jestPlugin.configs.recommended.rules,
+    ...eslintPluginJest.configs.recommended.rules,
   },
 }
 
-const config: Linter.FlatConfig[] = [
-  {
-    ignores: [
-      'commitlint.config.js',
-      'jest.config.js',
-      'lib',
-      'release.config.js',
-      '.releaserc.js',
-      'eslint.config.js',
-      'coverage',
-      'dist',
-    ],
+export const javascriptConfig: TSESLint.FlatConfig.Config = {
+  rules: {
+    strict: 'error',
+    ...loveRules,
+    ...importRules,
+    ...eslintCommentsRules,
   },
-  ...compat.extends(
-    'plugin:@typescript-eslint/recommended-type-checked',
-    'plugin:@typescript-eslint/stylistic-type-checked',
-    'standard-with-typescript',
-    'plugin:@eslint-community/eslint-comments/recommended',
-    'plugin:import/recommended',
-    'plugin:import/typescript',
-  ),
-  typescriptConfig,
-  jestConfig,
-  {
-    linterOptions: {
-      reportUnusedDisableDirectives: true,
-    },
-  },
-  {
-    files: ['**/*.js', '**/*.jsx'],
-    rules: {
-      strict: 'error',
-      ...standardRules,
-      ...importRules,
-      ...eslintCommentsRules,
-    },
-  },
-]
-
-export default config
+  ...linterOptionsConfig,
+}
