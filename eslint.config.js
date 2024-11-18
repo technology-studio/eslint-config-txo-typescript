@@ -1,13 +1,12 @@
-const typescriptEslint = require('typescript-eslint')
+import typescriptEslint from 'typescript-eslint'
 
-const {
+import {
   stylisticConfig,
-  ignoreList,
   typescriptConfigList,
-} = require('./lib')
+} from './lib/index.js'
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
-const config = typescriptEslint.config(
+export default typescriptEslint.config(
   // TODO: remove after migrating to prettier
   {
     files: ['**/*.ts'],
@@ -28,5 +27,3 @@ const config = typescriptEslint.config(
     ]
   }
 )
-
-module.exports = config
