@@ -27,7 +27,7 @@ export const loveRules: Linter.RulesRecord = {
       ImportDeclaration: {
         consistent: true,
         multiline: true,
-        // eslint-disable-next-line @typescript-eslint/no-magic-numbers -- not necessary in config file
+        // eslint-disable-next-line @typescript-eslint/no-magic-numbers -- "minProperties" requires line breaks if the number of properties is at least the given integer.
         minProperties: 2,
       },
       ExportDeclaration: {
