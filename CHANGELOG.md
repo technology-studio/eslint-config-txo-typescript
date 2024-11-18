@@ -1,3 +1,20 @@
+## [6.0.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v5.0.1...v6.0.0) (2024-11-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* move to ESM (#577)
+
+### CI
+
+* add synchronize to PR workflow ([#580](https://github.com/technology-studio/eslint-config-txo-typescript/issues/580)) ([86dfec7](https://github.com/technology-studio/eslint-config-txo-typescript/commit/86dfec7ddfe950edbf29da23a42121b120c1ce3b))
+* update release config to ESM ([#583](https://github.com/technology-studio/eslint-config-txo-typescript/issues/583)) ([d0b298f](https://github.com/technology-studio/eslint-config-txo-typescript/commit/d0b298f7dac38f199b09b1ca1700f4f00b98978e))
+
+
+### Features
+
+* move to ESM ([#577](https://github.com/technology-studio/eslint-config-txo-typescript/issues/577)) ([71da814](https://github.com/technology-studio/eslint-config-txo-typescript/commit/71da814f11e7a0bf6af1506bf12bb75ac03de2a0))
+
 ## [5.0.1](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v5.0.0...v5.0.1) (2024-11-18)
 
 
