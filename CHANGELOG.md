@@ -1,3 +1,15 @@
+## [5.0.1](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v5.0.0...v5.0.1) (2024-11-18)
+
+
+### CI
+
+* update pr and release workflows ([#576](https://github.com/technology-studio/eslint-config-txo-typescript/issues/576)) ([2aeb23b](https://github.com/technology-studio/eslint-config-txo-typescript/commit/2aeb23bc4a6d6ecb7eb5f0d0fd80715849f89352))
+
+
+### Bug fixes
+
+* **deps:** update dependency typescript-eslint to ^8.15.0 ([#579](https://github.com/technology-studio/eslint-config-txo-typescript/issues/579)) ([cb115f1](https://github.com/technology-studio/eslint-config-txo-typescript/commit/cb115f11d0813fb6d0c1e6ea9ba96c62a27319ee))
+
 ## [5.0.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v4.0.70...v5.0.0) (2024-11-15)
 
 
