@@ -16,10 +16,10 @@ import eslintPluginStylistic from '@stylistic/eslint-plugin'
 import eslintPluginJest from 'eslint-plugin-jest'
 import eslintConfigLove from 'eslint-config-love'
 
-import { typescriptRules } from './configs/typescript'
-import { loveRules } from './configs/love'
-import { importRules } from './configs/import'
-import { eslintCommentsRules } from './configs/eslint-comments'
+import { typescriptRules } from './configs/typescript.js'
+import { loveRules } from './configs/love.js'
+import { importRules } from './configs/import.js'
+import { eslintCommentsRules } from './configs/eslint-comments.js'
 
 // TODO: remove after migrating to prettier
 /** @deprecated will be replaced with prettier */

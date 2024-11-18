@@ -4,6 +4,7 @@
     "declaration": true,
     "noEmit": false,
     "outDir": "lib",
+    "module": "ESNext",
     "typeRoots": [
       "node_modules/@types",
       "src/types"
