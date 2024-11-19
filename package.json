@@ -46,7 +46,7 @@
     "typescript-eslint": "^8.15.0"
   },
   "devDependencies": {
-    "@txo/commitlint": "^1.0.19",
+    "@txo/commitlint": "^1.0.20",
     "@txo/semantic-release": "^2.0.9",
     "@txo/tsconfig": "^2.0.0",
     "@types/eslint": "^9.6.1",
