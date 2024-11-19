@@ -86,17 +86,3 @@ export const jestConfig: TSESLint.FlatConfig.Config = {
     ...eslintPluginJest.configs.recommended.rules,
   },
 }
-
-export const javascriptConfigList: TSESLint.FlatConfig.ConfigArray = [
-  eslintConfigLove,
-  eslintPluginEslintComments.recommended,
-  {
-    rules: {
-      strict: 'error',
-      ...loveRules,
-      ...importRules,
-      ...eslintCommentsRules,
-    },
-    ...linterOptionsConfig,
-  },
-]
