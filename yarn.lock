@@ -1617,7 +1617,7 @@
     semver "^7.6.0"
     ts-api-utils "^1.3.0"
 
-"@typescript-eslint/utils@8.15.0", "@typescript-eslint/utils@^6.0.0 || ^7.0.0 || ^8.0.0", "@typescript-eslint/utils@^8.12.0", "@typescript-eslint/utils@^8.13.0":
+"@typescript-eslint/utils@8.15.0", "@typescript-eslint/utils@^6.0.0 || ^7.0.0 || ^8.0.0", "@typescript-eslint/utils@^8.13.0", "@typescript-eslint/utils@^8.15.0":
   version "8.15.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/utils/-/utils-8.15.0.tgz#ac04679ad19252776b38b81954b8e5a65567cef6"
   integrity sha512-k82RI9yGhr0QM3Dnq+egEpz9qB6Un+WLYhmoNcvl8ltMEededhh7otBVVIDDsEEttauwdY/hQoSsOv13lxrFzQ==
@@ -2861,17 +2861,17 @@ eslint-compat-utils@^0.5.1:
   dependencies:
     semver "^7.5.4"
 
-eslint-config-love@^99.0.0:
-  version "99.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-love/-/eslint-config-love-99.0.0.tgz#1d6752a4ebe57f260d4f3fa77b476684c99b3d73"
-  integrity sha512-GGNNMdPmw069mbQeTzYFkCKt7zZaeBdakupQ0zJm/m+EdaVUz+qituoBx9bRI1so9O2jYbnII9Tb7Lx13PG9Kg==
+eslint-config-love@^101.0.0:
+  version "101.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-love/-/eslint-config-love-101.0.0.tgz#961fd666d6f2b1dd2da09e01924e0b2bdc04a7bf"
+  integrity sha512-oyCmoZebz7lBNyOBJtHC2zmNgre4nqTc5gC2A3G7gE8elYt2hqQAHT8zqqsIHUQuObVn+pBnyLnvPQ1EUtnGWQ==
   dependencies:
-    "@typescript-eslint/utils" "^8.12.0"
+    "@typescript-eslint/utils" "^8.15.0"
     eslint-plugin-eslint-comments "^3.2.0"
     eslint-plugin-import "^2.31.0"
     eslint-plugin-n "^17.0.0"
     eslint-plugin-promise "^7.0.0"
-    typescript-eslint "^8.12.0"
+    typescript-eslint "^8.15.0"
 
 eslint-import-resolver-node@^0.3.9:
   version "0.3.9"
@@ -7342,7 +7342,7 @@ typed-array-length@^1.0.6:
     is-typed-array "^1.1.13"
     possible-typed-array-names "^1.0.0"
 
-typescript-eslint@^8.12.0, typescript-eslint@^8.15.0:
+typescript-eslint@^8.15.0:
   version "8.15.0"
   resolved "https://registry.yarnpkg.com/typescript-eslint/-/typescript-eslint-8.15.0.tgz#c8a2a0d183c3eb48ae176aa078c1b9daa584cf9d"
   integrity sha512-wY4FRGl0ZI+ZU4Jo/yjdBu0lVTSML58pu6PgGtJmCufvzfV565pUF6iACQt092uFOd49iLOTX/sEVmHtbSrS+w==
