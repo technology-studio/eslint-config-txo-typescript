@@ -1,3 +1,10 @@
+## [6.0.6](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v6.0.5...v6.0.6) (2024-11-25)
+
+
+### Bug fixes
+
+* **deps:** update dependency typescript-eslint to ^8.16.0 ([#592](https://github.com/technology-studio/eslint-config-txo-typescript/issues/592)) ([efbf48a](https://github.com/technology-studio/eslint-config-txo-typescript/commit/efbf48ac2d243ec5c469c4f7a42998f9a3e2340f))
+
 ## [6.0.5](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v6.0.4...v6.0.5) (2024-11-25)
 
 
