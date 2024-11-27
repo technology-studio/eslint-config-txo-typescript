@@ -1,3 +1,14 @@
+## [7.0.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v6.0.7...v7.0.0) (2024-11-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove javascript setup (#585)
+
+### Bug fixes
+
+* remove javascript setup ([#585](https://github.com/technology-studio/eslint-config-txo-typescript/issues/585)) ([8897849](https://github.com/technology-studio/eslint-config-txo-typescript/commit/88978497b81d75a89c025eb329299769bb6b0d3a))
+
 ## [6.0.7](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v6.0.6...v6.0.7) (2024-11-27)
 
 
