@@ -43,7 +43,7 @@
     "eslint-plugin-n": "^17.14.0",
     "eslint-plugin-promise": "^7.2.1",
     "globals": "^15.13.0",
-    "typescript-eslint": "^8.16.0"
+    "typescript-eslint": "^8.17.0"
   },
   "devDependencies": {
     "@txo/commitlint": "^1.0.20",
