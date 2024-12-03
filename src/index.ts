@@ -8,6 +8,7 @@ import globals from 'globals'
 import {
   configs as typescriptEslintConfigs,
   parser,
+  config,
 } from 'typescript-eslint'
 import type { TSESLint } from '@typescript-eslint/utils'
 import eslintPluginEslintComments from '@eslint-community/eslint-plugin-eslint-comments/configs'
@@ -85,4 +86,9 @@ export const jestConfig: TSESLint.FlatConfig.Config = {
   rules: {
     ...eslintPluginJest.configs.recommended.rules,
   },
+}
+
+export {
+  config,
+  type TSESLint,
 }
