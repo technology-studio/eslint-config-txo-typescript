@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-txo-typescript",
-  "version": "7.0.4",
+  "version": "7.0.5",
   "description": "Technology Studio - Eslint typescript config",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -38,7 +38,7 @@
     "@typescript-eslint/utils": "^8.17.0",
     "eslint": "^9.16.0",
     "eslint-config-love": "^109.0.0",
-    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jest": "^28.9.0",
     "eslint-plugin-n": "^17.14.0",
