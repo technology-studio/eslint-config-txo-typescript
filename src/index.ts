@@ -89,6 +89,6 @@ export const jestConfig: TSESLint.FlatConfig.Config = {
 }
 
 export {
-  config,
+  config as typescriptEslintConfig,
   type TSESLint,
 }
