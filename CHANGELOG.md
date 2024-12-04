@@ -1,3 +1,10 @@
+## [7.1.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.0.5...v7.1.0) (2024-12-04)
+
+
+### Features
+
+* reexport typescript-eslint methods ([#599](https://github.com/technology-studio/eslint-config-txo-typescript/issues/599)) ([90ae46f](https://github.com/technology-studio/eslint-config-txo-typescript/commit/90ae46f9c356aeefc7362c96ae46e4a6367f8458))
+
 ## [7.0.5](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.0.4...v7.0.5) (2024-12-03)
 
 
