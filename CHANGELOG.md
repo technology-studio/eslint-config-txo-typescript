@@ -1,3 +1,10 @@
+## [7.2.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.1.0...v7.2.0) (2024-12-05)
+
+
+### Features
+
+* add commands for checking and updating CI rules ([#600](https://github.com/technology-studio/eslint-config-txo-typescript/issues/600)) ([e992bfd](https://github.com/technology-studio/eslint-config-txo-typescript/commit/e992bfde2ca7ae72e7a1e23c0a5b383f8d82bf84))
+
 ## [7.1.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.0.5...v7.1.0) (2024-12-04)
 
 
