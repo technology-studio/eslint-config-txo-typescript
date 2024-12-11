@@ -1,3 +1,10 @@
+## [7.2.7](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.2.6...v7.2.7) (2024-12-11)
+
+
+### Bug fixes
+
+* skip adding to CI rules when missing in eslint config ([139062b](https://github.com/technology-studio/eslint-config-txo-typescript/commit/139062bcb9c7fa3d0228c7281cd96156f41341d0))
+
 ## [7.2.6](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.2.5...v7.2.6) (2024-12-11)
 
 
