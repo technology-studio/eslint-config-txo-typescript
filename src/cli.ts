@@ -35,6 +35,10 @@ void yargs(hideBin(process.argv))
       lintResults.forEach((result) => {
         result.messages.forEach((message) => {
           if (message.ruleId != null && message.severity === ERROR_SEVERITY) {
+            if ((/Definition for rule '.*' was not found/.exec(message.message)) != null) {
+              console.log(`Rule ${message.ruleId} is not defined in eslint config, skipping...`)
+              return
+            }
             errorRuleSet.add(message.ruleId)
           }
         })
