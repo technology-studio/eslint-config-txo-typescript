@@ -1,3 +1,10 @@
+## [7.3.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.2.7...v7.3.0) (2024-12-13)
+
+
+### Features
+
+* add cache flag for `check-ci-rules` command ([#608](https://github.com/technology-studio/eslint-config-txo-typescript/issues/608)) ([d3608af](https://github.com/technology-studio/eslint-config-txo-typescript/commit/d3608af9bf2bb0d035033dfb48f7aba5f36c954b))
+
 ## [7.2.7](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.2.6...v7.2.7) (2024-12-11)
 
 
