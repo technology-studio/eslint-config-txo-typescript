@@ -48,15 +48,24 @@ void yargs(hideBin(process.argv))
       writeFileSync('eslint-ci-rules.json', JSON.stringify([...errorRuleSet], null, 2))
     },
   )
-  .command(
+  .command<{ cache: boolean }>(
     ['check-ci-rules', 'ccr'],
     'Check the CI rules',
-    () => undefined,
-    async () => {
+    (yargs) => {
+      yargs
+        .option('cache', {
+          type: 'boolean',
+          description: 'Use the ESLint cache',
+          default: false,
+        })
+        .strict()
+    },
+    async (argv) => {
       console.log('Checking CI rules...')
       const ciEslint = new ESLint(
         {
           overrideConfigFile: 'eslint-ci.config.js',
+          cache: argv.cache,
         },
       )
       const currentlyIgnoredRulesFile = readFileSync('eslint-ci-rules.json', 'utf8')
