@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-txo-typescript",
-  "version": "7.3.18",
+  "version": "7.3.20",
   "description": "Technology Studio - Eslint typescript config",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -38,7 +38,7 @@
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
     "@stylistic/eslint-plugin": "^2.13.0",
-    "@typescript-eslint/utils": "^8.19.1",
+    "@typescript-eslint/utils": "^8.20.0",
     "eslint": "^9.18.0",
     "eslint-config-love": "^116.0.0",
     "eslint-import-resolver-typescript": "^3.7.0",
@@ -47,7 +47,7 @@
     "eslint-plugin-n": "^17.15.1",
     "eslint-plugin-promise": "^7.2.1",
     "globals": "^15.14.0",
-    "typescript-eslint": "^8.19.1",
+    "typescript-eslint": "^8.20.0",
     "yargs": "^17.7.2"
   },
   "devDependencies": {
