@@ -45,7 +45,7 @@ void yargs(hideBin(process.argv))
       })
 
       // eslint-disable-next-line @typescript-eslint/no-magic-numbers -- JSON string indentation - 2 spaces
-      writeFileSync('eslint-ci-rules.json', JSON.stringify([...errorRuleSet], null, 2))
+      writeFileSync('eslint-ci-rules.json', `${JSON.stringify([...errorRuleSet], null, 2)}\n`)
     },
   )
   .command<{ cache: boolean }>(
