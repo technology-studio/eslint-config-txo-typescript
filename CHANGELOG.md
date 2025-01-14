@@ -1,3 +1,10 @@
+## [7.3.21](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.3.20...v7.3.21) (2025-01-14)
+
+
+### Bug fixes
+
+* return new line in CI rules JSON ([#633](https://github.com/technology-studio/eslint-config-txo-typescript/issues/633)) ([47f84aa](https://github.com/technology-studio/eslint-config-txo-typescript/commit/47f84aa01ee9d55f31956edc26640610a118ad55))
+
 ## [7.3.20](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.3.19...v7.3.20) (2025-01-14)
 
 
