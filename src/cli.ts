@@ -124,6 +124,7 @@ void yargs(hideBin(process.argv))
         console.log(`Number of errors: ${lintResults.reduce((acc, result) => acc + result.errorCount, 0)}`)
       } catch (e) {
         console.error('ESLint failed to run')
+        console.error(e)
         process.exit(ESLINT_CRASH_EXIT_CODE)
       }
     },
