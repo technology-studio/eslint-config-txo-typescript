@@ -16,6 +16,7 @@ import {
 const ERROR_SEVERITY = 2
 const WARN_SEVERITY = 1
 const UNUSED_RULES_EXIT_CODE = 1
+const ESLINT_CRASH_EXIT_CODE = 1
 
 // Define the `update-ci-rules` command
 void yargs(hideBin(process.argv))
@@ -90,6 +91,40 @@ void yargs(hideBin(process.argv))
         console.error('Unused rules:')
         console.error([...unusedRules])
         process.exit(UNUSED_RULES_EXIT_CODE)
+      }
+    },
+  )
+  .command<{ cache: boolean }>(
+    ['validate-eslint-run', 'ver'],
+    'Runs ESLint and returns success if ESLint runs properly (even with lint errors)',
+    (yargs) => {
+      yargs
+        .option('cache', {
+          type: 'boolean',
+          description: 'Use the ESLint cache',
+          default: false,
+        })
+        .strict()
+    },
+    async (argv) => {
+      console.log('Running ESLint...')
+      const ciEslint = new ESLint(
+        {
+          overrideConfigFile: 'eslint-ci.config.js',
+          cache: argv.cache,
+        },
+      )
+      try {
+        const lintResults = await ciEslint.lintFiles(['.'])
+        console.log('ESLint ran successfully')
+        console.log(`Results:`)
+        // eslint-disable-next-line @typescript-eslint/no-magic-numbers -- initial number of warnings is 0
+        console.log(`Number of warnings: ${lintResults.reduce((acc, result) => acc + result.warningCount, 0)}`)
+        // eslint-disable-next-line @typescript-eslint/no-magic-numbers -- initial number of errors is 0
+        console.log(`Number of errors: ${lintResults.reduce((acc, result) => acc + result.errorCount, 0)}`)
+      } catch (e) {
+        console.error('ESLint failed to run')
+        process.exit(ESLINT_CRASH_EXIT_CODE)
       }
     },
   )
