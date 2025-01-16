@@ -1,3 +1,10 @@
+## [7.4.0](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.3.23...v7.4.0) (2025-01-16)
+
+
+### Features
+
+* add `validate-eslint-run` command ([#635](https://github.com/technology-studio/eslint-config-txo-typescript/issues/635)) ([4ccea87](https://github.com/technology-studio/eslint-config-txo-typescript/commit/4ccea87c43bfe6d48aaa0138a3478d81a1f79801))
+
 ## [7.3.23](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.3.22...v7.3.23) (2025-01-15)
 
 
