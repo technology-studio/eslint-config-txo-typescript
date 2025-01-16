@@ -1,3 +1,10 @@
+## [7.3.23](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.3.22...v7.3.23) (2025-01-15)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-config-love to v117 ([#636](https://github.com/technology-studio/eslint-config-txo-typescript/issues/636)) ([6130e39](https://github.com/technology-studio/eslint-config-txo-typescript/commit/6130e39ac82a0ad30885e205c2922335f93eaab6))
+
 ## [7.3.22](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.3.21...v7.3.22) (2025-01-15)
 
 
