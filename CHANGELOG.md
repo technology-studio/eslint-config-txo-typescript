@@ -1,3 +1,10 @@
+## [7.4.7](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.6...v7.4.7) (2025-02-03)
+
+
+### Bug fixes
+
+* bump `max-nested-callbacks` to 5 ([#648](https://github.com/technology-studio/eslint-config-txo-typescript/issues/648)) ([78c3077](https://github.com/technology-studio/eslint-config-txo-typescript/commit/78c3077e3a7de96f23fb2430b4c6b587388090e3))
+
 ## [7.4.6](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.5...v7.4.6) (2025-02-03)
 
 
