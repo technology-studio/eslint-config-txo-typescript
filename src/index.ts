@@ -85,6 +85,7 @@ export const jestConfig: TSESLint.FlatConfig.Config = {
   },
   rules: {
     ...eslintPluginJest.configs.recommended.rules,
+    '@typescript-eslint/no-magic-numbers': 'off',
   },
 }
 
