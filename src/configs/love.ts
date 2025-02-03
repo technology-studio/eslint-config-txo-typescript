@@ -38,4 +38,6 @@ export const loveRules: Linter.RulesRecord = {
   ],
   'require-await': 'off',
   'comma-dangle': 'off',
+  // eslint-disable-next-line @typescript-eslint/no-magic-numbers -- We want to allow more nesting due to jest tests and memoized components
+  'max-nested-callbacks': ['error', 5],
 }
