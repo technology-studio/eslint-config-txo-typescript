@@ -1,3 +1,10 @@
+## [7.4.6](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.5...v7.4.6) (2025-02-03)
+
+
+### Bug fixes
+
+* disable `no-magic-numbers` in jest config ([#645](https://github.com/technology-studio/eslint-config-txo-typescript/issues/645)) ([460cd32](https://github.com/technology-studio/eslint-config-txo-typescript/commit/460cd32d9d786c842a67ae7b3f3ba19cbf10edfe))
+
 ## [7.4.5](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.4...v7.4.5) (2025-01-28)
 
 
