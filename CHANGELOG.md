@@ -1,3 +1,10 @@
+## [7.4.8](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.7...v7.4.8) (2025-02-03)
+
+
+### Bug fixes
+
+* add `jest/expect-expect` rule override ([#649](https://github.com/technology-studio/eslint-config-txo-typescript/issues/649)) ([035d8b4](https://github.com/technology-studio/eslint-config-txo-typescript/commit/035d8b4acd83cb665026aa8415861a918329f848))
+
 ## [7.4.7](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.6...v7.4.7) (2025-02-03)
 
 
