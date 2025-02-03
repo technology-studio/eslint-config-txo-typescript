@@ -85,6 +85,12 @@ export const jestConfig: TSESLint.FlatConfig.Config = {
   },
   rules: {
     ...eslintPluginJest.configs.recommended.rules,
+    'jest/expect-expect': [
+      'error',
+      {
+        assertFunctionNames: ['expect', 'expectTypeOf'],
+      },
+    ],
     '@typescript-eslint/no-magic-numbers': 'off',
   },
 }
