@@ -4,16 +4,18 @@
  * @Copyright: Technology Studio
 **/
 
+import { pathsToModuleNameMapper } from 'ts-jest'
 import { defaults } from 'jest-config'
+
+import tsconfig from './__tests__/tsconfig.json' with { type: 'json' }
 
 export default {
   preset: 'ts-jest',
+  cache: true,
+  cacheDirectory: '<rootDir>/node_modules/.cache/jest',
   testEnvironment: 'node',
   testMatch: [
     '<rootDir>/__tests__/Tests/**/?(*.)(spec|test).ts'
-  ],
-  transformIgnorePatterns: [
-    '/node_modules/(?!@txo).+\\.js$'
   ],
   testPathIgnorePatterns: [
     '/node_modules/'
@@ -26,7 +28,8 @@ export default {
   ],
   transform: {
     '^.+\\.tsx?$': ['ts-jest', {
-      tsconfig: './__tests__/tsconfig.json'
+      tsconfig: '<rootDir>/__tests__/tsconfig.json'
     }]
   },
+  moduleNameMapper: pathsToModuleNameMapper(tsconfig.compilerOptions.paths, { prefix: '<rootDir>/' }),
 }

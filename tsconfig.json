@@ -1,15 +1,14 @@
 {
-  "extends": "@txo/tsconfig",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "declaration": true,
     "noEmit": false,
-    "outDir": "lib",
-    "typeRoots": [
-      "node_modules/@types",
-      "src/types"
-    ]
+    "declaration": true,
+    "outDir": "./lib"
   },
   "include": [
     "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
