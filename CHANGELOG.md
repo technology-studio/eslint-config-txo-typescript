@@ -1,3 +1,10 @@
+## [7.4.14](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.13...v7.4.14) (2025-02-12)
+
+
+### Bug fixes
+
+* **deps:** update dependency globals to ^15.15.0 ([#654](https://github.com/technology-studio/eslint-config-txo-typescript/issues/654)) ([5a9c8e1](https://github.com/technology-studio/eslint-config-txo-typescript/commit/5a9c8e1ff1c9dd8a1f2aba7ea293842af97ba5a4))
+
 ## [7.4.13](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.12...v7.4.13) (2025-02-12)
 
 
