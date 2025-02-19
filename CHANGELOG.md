@@ -1,3 +1,10 @@
+## [7.4.19](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.18...v7.4.19) (2025-02-19)
+
+
+### Bug fixes
+
+* disable `quote-props` rule ([#659](https://github.com/technology-studio/eslint-config-txo-typescript/issues/659)) ([feff21d](https://github.com/technology-studio/eslint-config-txo-typescript/commit/feff21d3c57e766d8b5bda071ba600a229d31e65))
+
 ## [7.4.18](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.17...v7.4.18) (2025-02-18)
 
 
