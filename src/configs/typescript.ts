@@ -63,4 +63,5 @@ export const typescriptRules: Linter.RulesRecord = {
   '@typescript-eslint/require-await': 'off',
   '@stylistic/indent': 'off',
   '@stylistic/jsx-quotes': ['error', 'prefer-single'],
+  '@stylistic/quote-props': 'off',
 }
