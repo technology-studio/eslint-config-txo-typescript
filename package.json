@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-txo-typescript",
-  "version": "7.4.20",
+  "version": "7.4.21",
   "description": "Technology Studio - Eslint typescript config",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
