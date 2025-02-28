@@ -1,3 +1,10 @@
+## [7.4.24](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.23...v7.4.24) (2025-02-28)
+
+
+### Bug fixes
+
+* **deps:** update dependency @stylistic/eslint-plugin to v4 ([#640](https://github.com/technology-studio/eslint-config-txo-typescript/issues/640)) ([e44d3f8](https://github.com/technology-studio/eslint-config-txo-typescript/commit/e44d3f8994f4a8577a9bb0f2ebae706fee849cf5))
+
 ## [7.4.23](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.22...v7.4.23) (2025-02-25)
 
 
