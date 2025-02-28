@@ -26,7 +26,6 @@ import { eslintCommentsRules } from './configs/eslint-comments.js'
 /** @deprecated will be replaced with prettier */
 export const stylisticConfig: TSESLint.FlatConfig.Config = {
   ...eslintPluginStylistic.configs.customize({
-    flat: true,
     braceStyle: '1tbs',
   }),
 }
