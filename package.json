@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
-    "@stylistic/eslint-plugin": "^4.1.0",
+    "@stylistic/eslint-plugin": "^4.2.0",
     "@typescript-eslint/utils": "^8.25.0",
     "eslint": "^9.21.0",
     "eslint-config-love": "^118.0.0",
