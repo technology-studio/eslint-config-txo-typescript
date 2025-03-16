@@ -1,3 +1,11 @@
+## [7.4.37](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.36...v7.4.37) (2025-03-16)
+
+
+### Bug fixes
+
+* **deps:** update dependency eslint-import-resolver-typescript to ^3.9.0 ([#680](https://github.com/technology-studio/eslint-config-txo-typescript/issues/680)) ([40a9f7c](https://github.com/technology-studio/eslint-config-txo-typescript/commit/40a9f7cd82406d85a069218460e5c88ce2858f66))
+* **deps:** update dependency eslint-import-resolver-typescript to ^3.9.1 ([#681](https://github.com/technology-studio/eslint-config-txo-typescript/issues/681)) ([26620ee](https://github.com/technology-studio/eslint-config-txo-typescript/commit/26620ee458c548a7d8e7154c5bb756f7be485f4f))
+
 ## [7.4.36](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.35...v7.4.36) (2025-03-13)
 
 
