@@ -1,3 +1,10 @@
+## [7.4.59](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.58...v7.4.59) (2025-04-12)
+
+
+### Bug fixes
+
+* **deps:** update dependency @eslint-community/eslint-plugin-eslint-comments to ^4.5.0 ([#708](https://github.com/technology-studio/eslint-config-txo-typescript/issues/708)) ([9c818c1](https://github.com/technology-studio/eslint-config-txo-typescript/commit/9c818c119cd2e8ad6961efe448a6dcc1be965b1b))
+
 ## [7.4.58](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.57...v7.4.58) (2025-04-08)
 
 
