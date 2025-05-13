@@ -1,3 +1,10 @@
+## [7.4.74](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.73...v7.4.74) (2025-05-13)
+
+
+### Bug fixes
+
+* **deps:** update dependency @typescript-eslint/utils to ^8.32.1 ([#726](https://github.com/technology-studio/eslint-config-txo-typescript/issues/726)) ([f58674c](https://github.com/technology-studio/eslint-config-txo-typescript/commit/f58674cd46ce067bd4c49c26faca45c048ec3aa4))
+
 ## [7.4.73](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.72...v7.4.73) (2025-05-13)
 
 
