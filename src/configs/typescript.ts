@@ -49,7 +49,7 @@ export const typescriptRules: Linter.RulesRecord = {
     },
   ],
   '@typescript-eslint/no-explicit-any': ['error'],
-  '@typescript-eslint/only-throw-error': 'off',
+  '@typescript-eslint/only-throw-error': ['error', { allowThrowingAny: true, allowThrowingUnknown: true }],
   '@stylistic/member-delimiter-style': ['error', {
     multiline: {
       delimiter: 'comma',
