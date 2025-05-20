@@ -1,3 +1,10 @@
+## [7.4.77](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.76...v7.4.77) (2025-05-20)
+
+
+### Bug fixes
+
+* disable @typescript-eslint/only-throw-error rule ([#731](https://github.com/technology-studio/eslint-config-txo-typescript/issues/731)) ([b9c3693](https://github.com/technology-studio/eslint-config-txo-typescript/commit/b9c3693583601fb897ab281f28f86cfb8b80c2fd))
+
 ## [7.4.76](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.75...v7.4.76) (2025-05-18)
 
 
