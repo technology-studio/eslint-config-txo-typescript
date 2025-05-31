@@ -1,3 +1,10 @@
+## [7.4.85](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.84...v7.4.85) (2025-05-31)
+
+
+### Bug fixes
+
+* **deps:** update eslint txo packages ([#740](https://github.com/technology-studio/eslint-config-txo-typescript/issues/740)) ([fbb553b](https://github.com/technology-studio/eslint-config-txo-typescript/commit/fbb553bb4d185e55ce0a264392f1fea05a844549))
+
 ## [7.4.84](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.83...v7.4.84) (2025-05-30)
 
 
