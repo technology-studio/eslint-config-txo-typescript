@@ -48,7 +48,7 @@
     "eslint-plugin-promise": "^7.2.1",
     "globals": "^16.3.0",
     "typescript-eslint": "^8.42.0",
-    "yargs": "^17.7.2"
+    "yargs": "^18.0.0"
   },
   "devDependencies": {
     "@txo/commitlint": "^1.0.24",
