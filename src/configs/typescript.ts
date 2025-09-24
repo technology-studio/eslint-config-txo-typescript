@@ -49,6 +49,7 @@ export const typescriptRules: Linter.RulesRecord = {
     },
   ],
   '@typescript-eslint/no-explicit-any': ['error'],
+  '@typescript-eslint/only-throw-error': ['error', { allowThrowingAny: true, allowThrowingUnknown: true }],
   '@stylistic/member-delimiter-style': ['error', {
     multiline: {
       delimiter: 'comma',
@@ -63,4 +64,5 @@ export const typescriptRules: Linter.RulesRecord = {
   '@typescript-eslint/require-await': 'off',
   '@stylistic/indent': 'off',
   '@stylistic/jsx-quotes': ['error', 'prefer-single'],
+  '@stylistic/quote-props': 'off',
 }
