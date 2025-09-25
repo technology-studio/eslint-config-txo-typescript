@@ -5,33 +5,22 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug Jest Tests with yarn",
+      "name": "Debug Jest Tests",
       "type": "node",
       "request": "launch",
-      "runtimeExecutable": "yarn",
-      "args": [
-        "test",
-        "--",
-        "--runInBand",
-        "--coverage=false"
-      ],
-      "runtimeArgs": [
-        "--inspect-brk"
-      ],
+      "runtimeArgs": ["--inspect-brk", "${workspaceRoot}/node_modules/.bin/jest", "--runInBand", "--coverage", "false", "${file}"],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen"
     },
     {
-      "name": "eslint",
+      "name": "Debug Jest Tests with yarn",
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "yarn",
-      "cwd": "${workspaceFolder}",
-      "runtimeArgs": [
-        "eslint",
-        "${relativeFile}"
-      ],
-      "sourceMaps": true,
-    }
+      "args": ["test", "--runInBand", "--coverage=false", "${file}"],
+      "runtimeArgs": ["--inspect-brk"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
   ]
 }
