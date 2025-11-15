@@ -62,6 +62,7 @@ export const typescriptRules: Linter.RulesRecord = {
   }],
   '@typescript-eslint/consistent-type-definitions': 'off',
   '@typescript-eslint/require-await': 'off',
+  '@typescript-eslint/prefer-destructuring': 'off',
   '@stylistic/indent': 'off',
   '@stylistic/jsx-quotes': ['error', 'prefer-single'],
   '@stylistic/quote-props': 'off',
