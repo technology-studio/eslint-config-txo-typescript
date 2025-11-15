@@ -1,3 +1,10 @@
+## [7.4.113](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.112...v7.4.113) (2025-11-15)
+
+
+### Bug fixes
+
+* disable `@typescript-eslint/prefer-destructuring` rule ([#798](https://github.com/technology-studio/eslint-config-txo-typescript/issues/798)) ([b1be059](https://github.com/technology-studio/eslint-config-txo-typescript/commit/b1be0592cad59cae148a9c4e78d5b61952ced2cb))
+
 ## [7.4.112](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.111...v7.4.112) (2025-11-04)
 
 
