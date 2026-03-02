@@ -78,10 +78,6 @@ export const jestConfig: TSESLint.FlatConfig.Config = {
     globals: {
       ...globals.jest,
     },
-    parser,
-    parserOptions: {
-      project: './__tests__/tsconfig.json',
-    },
   },
   settings: {
     'import/resolver': {
