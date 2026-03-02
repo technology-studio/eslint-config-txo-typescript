@@ -21,17 +21,13 @@ import { loveRules } from './configs/love.js'
 import { importRules } from './configs/import.js'
 import { eslintCommentsRules } from './configs/eslint-comments.js'
 
-// Extract only settings from a config, excluding plugins and rules
-// This allows us to get TypeScript-specific settings from eslint-plugin-import
-// without causing plugin redefinition conflicts with eslint-config-love
-const extractSettings = (
+// Remove plugin registrations from a config while preserving other fields.
+// This avoids plugin redefinition conflicts with eslint-config-love.
+const stripPlugins = (
   config: TSESLint.FlatConfig.Config,
 ): TSESLint.FlatConfig.Config => {
-  const { settings, name } = config
-  return {
-    ...(name != null ? { name: `${name}/settings-only` } : {}),
-    ...(settings != null ? { settings } : {}),
-  }
+  const { plugins: _plugins, ...rest } = config
+  return rest
 }
 
 // TODO: remove after migrating to prettier
@@ -53,10 +49,9 @@ export const typescriptConfigList: TSESLint.FlatConfig.ConfigArray = [
   ...typescriptEslintConfigs.recommendedTypeChecked,
   ...typescriptEslintConfigs.stylisticTypeChecked,
   eslintPluginEslintComments.recommended,
-  // Extract only settings from eslint-plugin-import's typescript config
-  // (TypeScript file extensions, parsers, resolvers) without the plugin,
+  // Remove plugin registrations from eslint-plugin-import's typescript config
   // since eslint-config-love will provide the import plugin
-  extractSettings(eslintPluginImportConfigs.typescript),
+  stripPlugins(eslintPluginImportConfigs.typescript),
   // eslint-config-love provides the import plugin and its rules
   eslintConfigLove,
   {

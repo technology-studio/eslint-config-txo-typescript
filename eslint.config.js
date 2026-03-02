@@ -1,3 +1,4 @@
+// Use eslint's config helper since typescript-eslint's is deprecated
 import { defineConfig } from 'eslint/config'
 import {
   jestConfig,
