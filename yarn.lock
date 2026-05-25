@@ -306,7 +306,7 @@
   resolved "https://registry.yarnpkg.com/@colors/colors/-/colors-1.5.0.tgz#bb504579c1cae923e6576a4f5da43d25f97bdbd9"
   integrity sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
 
-"@commitlint/cli@^20.5.0":
+"@commitlint/cli@^20.5.2":
   version "20.5.3"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-20.5.3.tgz#6b4bfcf19fc149b0a357725f551bad11a930f145"
   integrity sha512-OJdL0EXWD5y9LPa0nr/geOwzaS8BsdaybKkcloB0JgsguGxNv2R+hC2FTPqrAcprg35zF33KOQerY0x8W1aesA==
@@ -1391,12 +1391,12 @@
     "@tufjs/canonical-json" "2.0.0"
     minimatch "^10.1.1"
 
-"@txo/commitlint@^1.1.4":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@txo/commitlint/-/commitlint-1.1.4.tgz#87b9e5de74e2106398165bfb463cdadf67345c38"
-  integrity sha512-ldUD4J3s0bexeLhukHFwDTki68AzbWv7e+ZThldhhWB+uk/VL12CmIZ2l8E8O9S+9TuWP94s1MhAOFA4fjOFCQ==
+"@txo/commitlint@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@txo/commitlint/-/commitlint-1.1.5.tgz#4cd454140bd0dfbbdcbc69b4d4f67b83456a3acf"
+  integrity sha512-zphJ+7cw3ZL86maa/IWInoDBkp+/xTEesLOUt98OPv0CmF+TLkUIahJWZVfhkOjpvsuDOs+/tx/sXqN/hQxeGQ==
   dependencies:
-    "@commitlint/cli" "^20.5.0"
+    "@commitlint/cli" "^20.5.2"
     "@commitlint/config-conventional" "^20.5.0"
     commitizen "^4.3.1"
 
