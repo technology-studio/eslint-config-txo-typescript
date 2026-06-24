@@ -1,12 +1,13 @@
+// Use eslint's config helper since typescript-eslint's is deprecated
+import { defineConfig } from 'eslint/config'
 import {
   jestConfig,
   stylisticConfig,
   typescriptConfigList,
-  typescriptEslintConfig
 } from './lib/index.js'
 
 /** @type {import('eslint').Linter.Config[]} */
-export default typescriptEslintConfig(
+export default defineConfig(
   // TODO: remove after migrating to prettier
   {
     files: ['**/*.ts'],
