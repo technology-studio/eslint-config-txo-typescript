@@ -1,3 +1,9 @@
+## [7.4.117](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.116...v7.4.117) (2026-07-19)
+
+### Bug fixes
+
+* **deps:** update dependency yargs to ^17.7.3 ([#837](https://github.com/technology-studio/eslint-config-txo-typescript/issues/837)) ([d780998](https://github.com/technology-studio/eslint-config-txo-typescript/commit/d780998ba8fc206c587608391a31d5a924d70789))
+
 ## [7.4.116](https://github.com/technology-studio/eslint-config-txo-typescript/compare/v7.4.115...v7.4.116) (2026-06-26)
 
 ### Bug fixes
